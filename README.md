@@ -6,17 +6,16 @@
 <div markdown="1">
 
 # UMC-Week 1 Mission
-# AirBnB-Clonecoding
 
 ## 🔥 미션
 
 1. 학습한 HTML, CSS의 개념을 모두 사용하여 **서비스를 하나 클론코딩** 해오기
     - [넷플릭스](https://www.netflix.com/kr/)
     - [번개장터](https://m.bunjang.co.kr/)
-    - [마켓컬리](https://www.kurly.com/shop/main/index.php)
-    - [에어비엔비](https://www.airbnb.co.kr/)
-    - [원티드](https://www.wanted.co.kr/)
-    - [인프런](https://www.inflearn.com/)
+    - [마켓컬리](https://www.kurly.com/shop/main/index.php) <- [레니](https://www.github.com) | [타입](https://www.github.com/typeYu)
+    - [에어비엔비](https://www.airbnb.co.kr/) <- [윤](https://www.github.com/onlyoon)
+    - [원티드](https://www.wanted.co.kr/) <- [민지](https://www.github.com/alswlfl29)
+    - [인프런](https://www.inflearn.com/) 
 
 [ 클론코딩 미션 팁 ]
 
