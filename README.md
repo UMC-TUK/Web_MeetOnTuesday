@@ -2,7 +2,7 @@
 웹_화요일에만나요
 
 <details>
-<summary>WEEK-1</summary>
+<summary>UMC-Week 1 Mission</summary>
 <div markdown="1">
 
 # UMC-Week 1 Mission
