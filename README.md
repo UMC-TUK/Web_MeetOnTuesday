@@ -2,9 +2,8 @@
 웹_화요일에만나요
 
 <details>
-<summary>week1</summary>
+**<summary>week1</summary>**
 <div markdown="1">
-week1 미션
 
 # UMC-Week 1 Mission
 # AirBnB-Clonecoding
