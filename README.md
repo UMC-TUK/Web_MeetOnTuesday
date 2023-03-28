@@ -10,8 +10,6 @@
 
 ## 🔥 미션
 
----
-
 1. 학습한 HTML, CSS의 개념을 모두 사용하여 **서비스를 하나 클론코딩** 해오기
     - [넷플릭스](https://www.netflix.com/kr/)
     - [번개장터](https://m.bunjang.co.kr/)
