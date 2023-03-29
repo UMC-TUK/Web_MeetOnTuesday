@@ -37,9 +37,9 @@
 
 <br>
     
-<details>
-<summary>⚡이슈 No.1 (예시)</summary>
-<div markdown="1">
+    <details>
+    <summary>⚡이슈 No.1 (예시)</summary>
+    <div markdown="1">
     
     __`이슈`__
     
@@ -56,6 +56,9 @@
     **`참고레퍼런스`**
     
     - 링크
+
+    </div>
+    </details>
 
 </div>
 </details>
