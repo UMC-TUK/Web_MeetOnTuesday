@@ -37,7 +37,7 @@
     
 <details>
 <summary>⚡이슈 No.1 (예시)</summary>
-<div markdown="2">
+<div markdown="1">
     
     `이슈`
     
