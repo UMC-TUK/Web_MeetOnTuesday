@@ -42,9 +42,9 @@
 💡 스스로 해결하기 어렵다면? 스터디원들에게 도움을 요청하거나 **너디너리의 지식IN 채널에 질문**해보세요!
 
 </aside>
-    
+<br>
 <details>
-<summary>⚡이슈 No.1</summary>
+<summary>⚡이슈 No.1 (예시)</summary>
 <div markdown="1">
     
     **`이슈`**
