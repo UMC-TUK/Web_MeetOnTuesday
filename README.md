@@ -34,12 +34,10 @@
 💡 실습하면서 생긴 문제들에 대해서, **이슈 - 문제 - 해결** 순서로 작성해주세요.
 
 💡 스스로 해결하기 어렵다면? 스터디원들에게 도움을 요청하거나 **너디너리의 지식IN 채널에 질문** 해보세요!
-
-<br>
     
-    <details>
-    <summary>⚡이슈 No.1 (예시)</summary>
-    <div markdown="1">
+<details>
+<summary>⚡이슈 No.1 (예시)</summary>
+<div markdown="1">
     
     __`이슈`__
     
@@ -57,8 +55,8 @@
     
     - 링크
 
-    </div>
-    </details>
+</div>
+</details>
 
 </div>
 </details>
