@@ -1,0 +1,345 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* CSS Start ===================================================== */
+
+#main {
+  width: 941px;
+  height: 4980px;
+}
+
+/* header css ==================================================== */
+header {
+  /*indicator*/
+  border: 1px solid black;
+  /*=========*/
+  /*Box*/
+  height: 80px;
+  width: 941px;
+  max-width: 2520px;
+  /*===*/
+  /*Position*/
+  display: flex;
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  z-index: 1;
+  /*========*/
+}
+
+#header_wrap {
+  /*indicator*/
+  border: 1px solid red;
+  /*=========*/
+  /*Box*/
+  height: 100%;
+  width: 861px;
+  margin: 0 auto;
+  /*===*/
+}
+
+/* =============================================================== */
+
+/* container css ================================================= */
+
+#container1 {
+  /*indicator*/
+  border: 1px solid black;
+  /*=========*/
+  /*Box*/
+  height: 78px;
+  width: 941px;
+  padding: 20px 0 0 0;
+  /*===*/
+  /*Position*/
+  display: flex;
+  position: sticky;
+  top: 80px;
+  z-index: 2;
+  /*========*/
+}
+
+#container1_wrap {
+  /*indicator*/
+  border: 1px solid red;
+  /*=========*/
+  /*Box*/
+  height: 100%;
+  width: 861px;
+  max-height: 78px;
+  max-width: 2520px;
+  margin: 0 auto;
+  /*===*/
+  display: grid;
+}
+
+#container2 {
+  position: relative;
+  border: 1px solid black;
+  /*Box*/
+  height: 4980px;
+  width: 941px;
+  /*===*/
+  top: 80px;
+}
+
+#container2_wrap {
+  border: 1px solid red;
+  /*Box*/
+  height: 100%;
+  width: 861px;
+  margin: 0 auto;
+  /*===*/
+  /*Position*/
+  position: relative;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  display: block;
+  /*========*/
+}
+
+/* =============================================================== */
+
+/* footer css ==================================================== */
+
+footer {
+  border: 1px solid #dddddd;
+  /* background-color: #f1f1f1; */
+  position: sticky;
+  bottom: 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+#footer1 {
+  /*indicator*/
+  border: 1px solid black;
+  /*=========*/
+  /*Box*/
+  height: 67px;
+  width: 940.969px;
+  /*===*/
+}
+
+#footer1_wrap {
+  /*indicator*/
+  border: 1px solid red;
+  /*=========*/
+  /*Box*/
+  height: 40px;
+  width: 861px; /*가로 padding 적용*/
+  margin: 0 auto;
+  padding: 13px 0 14px 0;
+  /*===*/
+  /*Position*/
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  /*========*/
+}
+
+#footer1_left {
+  padding: 0 0 0 0;
+  display: block;
+  flex-grow: 2;
+  list-style-type: decimal;
+  list-style-position: outside;
+}
+
+#footer1_right {
+  flex-grow: 1;
+}
+
+#footer2 {
+  /*indicator*/
+  border: 1px solid black;
+  /*=========*/
+  /*Box*/
+  width: 941px;
+  height: 65px;
+  /*===*/
+  /*Position*/
+  display: flex;
+  /*========*/
+}
+
+#footer2_wrap {
+  /*indicator*/
+  border: 1px solid red;
+  border-top: 1px solid #dddddd;
+  /*=========*/
+  /*Box*/
+  height: 52px;
+  width: 861px; /*가로 padding 적용*/
+  margin: 0 auto;
+  padding: 4px 0 8px 0;
+  /*===*/
+
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
+    "Helvetica Neue", sans-serif;
+  font-size: 10px;
+  letter-spacing: 0.2px;
+  line-height: 12px;
+  text-decoration: none solid rgb(113, 113, 113);
+  word-spacing: 0px;
+
+  color: #717171;
+}
+
+/* =============================================================== */
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+li {
+  display: block;
+  float: left;
+  padding: 4px;
+}
+
+ol {
+  display: inline;
+  list-style-type: decimal;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
