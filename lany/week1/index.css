@@ -1,0 +1,79 @@
+/* 회원가입, 로그인, 고객센터 */
+.topBar {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+/* 카테고리 줄 */
+.list {
+  font-weight: 500;
+  margin-right: 100px;
+  display: flex;
+  align-items: center;
+}
+
+/* 이 상품 어때요? */
+.imgWrap {
+  width: 249px;
+  height: 320px;
+  margin-right: 15px;
+}
+
+.imgBox {
+  width: 249px;
+  height: 320px;
+}
+
+.kart {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  top: 255px;
+  right: 65px;
+}
+
+.deliver {
+  margin-top: 15px;
+  color: rgb(176, 176, 176);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.product {
+  margin-top: 5px;
+  font-size: 18px;
+}
+
+.content {
+  margin-top: 5px;
+  font-size: 12px;
+  color: rgb(176, 176, 176);
+}
+
+.price {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.regularPrice {
+  text-decoration: line-through;
+  font-size: 14px;
+  color: rgb(176, 176, 176);
+}
+
+.review {
+  margin-top: 10px;
+  display: flex;
+}
+
+.reviewIcon {
+  width: 14px;
+  margin-right: 3px;
+}
+
+.reviewNum {
+  font-size: 13px;
+  color: rgb(176, 176, 176);
+  font-weight: 500;
+}
