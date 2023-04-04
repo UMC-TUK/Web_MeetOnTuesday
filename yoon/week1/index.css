@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -135,15 +135,38 @@ table {
   height: 4980px;
 }
 
+body {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+label {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 20px;
+  text-decoration: none solid rgb(0, 0, 0);
+  text-align: center;
+  white-space: nowrap;
+  word-spacing: 0px;
+  color: #434343;
+  max-height: 48px;
+  min-width: 58px;
+  padding: 4px 0 4px 0;
+  margin: 12px 0 10px 0;
+  margin-bottom: 2px solid black;
+}
+
 /* header css ==================================================== */
 header {
   /*indicator*/
-  border: 1px solid black;
+  /* border: 1px solid black; */
+  border-bottom: 1px solid #ccc;
   /*=========*/
   /*Box*/
   height: 80px;
   width: 941px;
   max-width: 2520px;
+  background-color: #ffffff;
   /*===*/
   /*Position*/
   display: flex;
@@ -158,13 +181,216 @@ header {
 
 #header_wrap {
   /*indicator*/
-  border: 1px solid red;
+  /* border: 1px solid red; */
   /*=========*/
   /*Box*/
   height: 100%;
   width: 861px;
   margin: 0 auto;
   /*===*/
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: center;
+}
+
+#logo {
+  height: 80px;
+  width: 140px;
+  min-height: auto;
+  min-width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+#search {
+  display: flex;
+  flex: 0 1 auto;
+  width: 322px;
+  height: 100%;
+  align-items: center;
+  padding: 0 24px 0 24px;
+}
+
+#search_buttons {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+
+#search_button1 {
+  width: 73px;
+  height: 46px;
+  background-color: #ffffff;
+  padding: 0 0 0 8px;
+  border-top-left-radius: 21px;
+  border-bottom-left-radius: 21px;
+  border: 1px solid #ccc;
+  border-right: 0px;
+}
+
+#search_button2 {
+  width: 100px;
+  height: 46px;
+  background-color: #ffffff;
+  padding: 0 0 0 0;
+  border-top: 1px solid #ccc;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom: 1px solid #ccc;
+}
+
+#search_button3 {
+  width: 118px;
+  height: 46px;
+  background-color: #ffffff;
+  padding: 0 0 0 0;
+  border-top-right-radius: 21px;
+  border-bottom-right-radius: 21px;
+  border: 1px solid #ccc;
+  border-left: 0px;
+}
+
+#search_button1_div {
+  width: 63px;
+  height: 23px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 22px;
+  text-decoration: none solid rgb(34, 34, 34);
+  text-align: left;
+  white-space: nowrap;
+  word-spacing: 0px;
+  border-right: 20px solid #ccc;
+}
+
+#search_button2_div {
+  width: 100px;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 22px;
+  text-decoration: none solid rgb(34, 34, 34);
+  text-align: left;
+  white-space: nowrap;
+  word-spacing: 0px;
+}
+
+#search_button3_div {
+  width: 120px;
+  height: 23px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  line-height: 22px;
+  text-decoration: none solid rgb(34, 34, 34);
+  text-align: left;
+  white-space: nowrap;
+  word-spacing: 0px;
+  color: #717171;
+  border-left: 1px solid #ccc;
+}
+
+#search_button3_2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  border: none;
+  border-radius: 50%;
+  background-color: #ff385c;
+  color: #ffffff;
+}
+
+/* #your_info {
+} */
+
+#your_info_components {
+  height: 80px;
+  width: 351px;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  gap: 5px;
+}
+
+#your_info_component1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+}
+
+#your_info_component2 {
+  display: flex;
+  align-items: center;
+}
+
+#your_space_airbnb {
+  /*font*/
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+  text-decoration: none solid rgb(34, 34, 34);
+  white-space: nowrap;
+  word-spacing: 0px;
+  /*====*/
+  height: 42px;
+  width: 225px;
+  background-color: #ffffff;
+  cursor: pointer;
+  border-radius: 21px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#earth_icon {
+  border-radius: 50%;
+  width: 42px;
+  height: 40px;
+  cursor: pointer;
+  border: 0px;
+  background-color: #ffffff;
+}
+
+#your_info_button {
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+#nav_button {
+  width: 77px;
+  height: 42px;
+  border-radius: 21px;
+  cursor: pointer;
+  background-color: #ffffff;
+  border: 0.5px solid #ccc;
+}
+
+#your_info_button_1_svg {
+  width: 30px;
+  height: 100%;
+}
+
+#your_info_button_2_svg {
+  width: 30px;
+  height: 100%;
 }
 
 /* =============================================================== */
@@ -173,7 +399,7 @@ header {
 
 #container1 {
   /*indicator*/
-  border: 1px solid black;
+  /* border: 1px solid black; */
   /*=========*/
   /*Box*/
   height: 78px;
@@ -190,7 +416,7 @@ header {
 
 #container1_wrap {
   /*indicator*/
-  border: 1px solid red;
+  /* border: 1px solid red; */
   /*=========*/
   /*Box*/
   height: 100%;
@@ -200,6 +426,103 @@ header {
   margin: 0 auto;
   /*===*/
   display: grid;
+}
+
+#container1_components {
+  display: flex;
+  flex-direction: row;
+  height: 78px;
+  justify-content: space-between;
+}
+
+#category_wrap {
+  display: flex;
+  flex-direction: row;
+}
+
+#category_list {
+  width: 737px;
+  height: 78px;
+  display: flex;
+  flex-direction: row;
+  column-gap: 32px;
+  align-items: center;
+}
+
+#category_slider {
+  width: 760px;
+  height: 78px;
+  /* position: 0 693px 0 12px; */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: absolute;
+}
+
+#category_slider_button {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+}
+
+#category_img {
+  width: 24px;
+  height: 24px;
+}
+
+#filter_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 104px;
+}
+
+#filter {
+  display: flex;
+  align-items: center;
+  width: 80px;
+  height: 48px;
+  /* border: 1px solid black; */
+  padding-left: 24px;
+  justify-content: flex-end;
+}
+
+#filter_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 78px;
+  height: 50px;
+  padding: 7px 0 7px 0;
+  border-radius: 10px;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+}
+
+#filter_button_span {
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: normal;
+  line-break: strict;
+  line-height: normal;
+
+  width: 46px;
+  height: 16px;
+  display: grid;
+  grid-auto-flow: column;
+  justify-items: center;
+  padding: 2 16px 0 16px;
+  column-gap: 8px;
+}
+
+#filter_button_span_letter {
+  font-size: 12px;
+  font-weight: 800;
+
 }
 
 #container2 {
@@ -235,7 +558,7 @@ header {
 
 footer {
   border: 1px solid #dddddd;
-  /* background-color: #f1f1f1; */
+  background-color: #f7f7f7;
   position: sticky;
   bottom: 0px;
   display: flex;
@@ -244,7 +567,7 @@ footer {
 
 #footer1 {
   /*indicator*/
-  border: 1px solid black;
+  /* border: 1px solid black; */
   /*=========*/
   /*Box*/
   height: 67px;
@@ -254,7 +577,7 @@ footer {
 
 #footer1_wrap {
   /*indicator*/
-  border: 1px solid red;
+  /* border: 1px solid red; */
   /*=========*/
   /*Box*/
   height: 40px;
@@ -265,25 +588,46 @@ footer {
   /*Position*/
   display: flex;
   flex-direction: row;
-  gap: 10px;
+  gap: 5px;
   /*========*/
 }
 
 #footer1_left {
-  padding: 0 0 0 0;
-  display: block;
+  display: inline-block;
   flex-grow: 2;
+  line-height: 14px;
+  font-size: 14px;
   list-style-type: decimal;
   list-style-position: outside;
 }
 
+insc {
+  text-decoration: none solid rgb(34, 34, 34);
+  word-spacing: 0px;
+}
+
+c_info {
+  line-height: 18px;
+  text-decoration: underline solid rgb(34, 34, 34);
+  text-align: left;
+  word-spacing: 0px;
+}
+
 #footer1_right {
   flex-grow: 1;
+  display: inline;
+  line-height: 14px;
+  font-size: 14px;
+}
+
+#earth_img {
+  width: 16px;
+  height: 16px;
 }
 
 #footer2 {
   /*indicator*/
-  border: 1px solid black;
+  /* border: 1px solid black; */
   /*=========*/
   /*Box*/
   width: 941px;
@@ -296,7 +640,7 @@ footer {
 
 #footer2_wrap {
   /*indicator*/
-  border: 1px solid red;
+  /* border: 1px solid red; */
   border-top: 1px solid #dddddd;
   /*=========*/
   /*Box*/
