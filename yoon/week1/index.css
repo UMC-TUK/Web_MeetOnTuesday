@@ -128,7 +128,7 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-/* CSS Start ===================================================== */
+/* CSS Start ================================================================ */
 
 #main {
   width: 941px;
@@ -156,7 +156,7 @@ label {
   margin-bottom: 2px solid black;
 }
 
-/* header css ==================================================== */
+/* header css =============================================================== */
 header {
   /*indicator*/
   /* border: 1px solid black; */
@@ -393,9 +393,9 @@ header {
   height: 100%;
 }
 
-/* =============================================================== */
+/* ========================================================================== */
 
-/* container css ================================================= */
+/* container css ============================================================ */
 
 #container1 {
   /*indicator*/
@@ -405,6 +405,7 @@ header {
   height: 78px;
   width: 941px;
   padding: 20px 0 0 0;
+  background-color: #ffffff;
   /*===*/
   /*Position*/
   display: flex;
@@ -525,9 +526,13 @@ header {
 
 }
 
+/* ========================================================================== */
+
+/* container2 css =========================================================== */
+
 #container2 {
   position: relative;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   /*Box*/
   height: 4980px;
   width: 941px;
@@ -536,11 +541,13 @@ header {
 }
 
 #container2_wrap {
-  border: 1px solid red;
+  border: 1px solid #ffffff;
   /*Box*/
   height: 100%;
   width: 861px;
   margin: 0 auto;
+  margin-top: 16px;
+  padding: 0 40px 0 40px;
   /*===*/
   /*Position*/
   position: relative;
@@ -552,9 +559,184 @@ header {
   /*========*/
 }
 
-/* =============================================================== */
+#container2_wrap_wrap {
+  height: 100%;
+  margin: 24px 0 24px 0;
+}
 
-/* footer css ==================================================== */
+#container2_components {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 271px 271px 271px;
+  grid-template-rows: 357.438px;
+  grid-column-gap: 24px;
+  grid-row-gap: 40px;
+}
+
+#container2_component_no1 {
+}
+
+#container2_component_no2 {
+}
+
+#container2_component_no3 {
+}
+
+#picture_wrap {
+  display: block;
+  margin-bottom: 12px;
+  width: 271px;
+  height: 257.438px;
+}
+
+#picture {
+
+}
+
+#picture_inner_components_wrap {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  padding: 12px 12px 0px 12px;
+  width: 247px;
+  height: 245.438px;
+  position: absolute;
+}
+
+/* ========================================================================== */
+
+/* container2_picture_heart_button css ====================================== */
+
+#picture_inner_component1 {
+  display: grid;
+  column-gap: 16px;
+  grid-template-columns: 99.5px 131.5px;
+  width: 247px;
+  height: 81.813px;
+}
+
+#heart_wrap {
+  box-sizing: border-box;
+  display: flex;
+  justify-self: flex-end;
+  width: 32px;
+  height: 32px;
+}
+
+#heart_button {
+  display: inline-flex;
+  width: 32px;
+  height: 32px;
+  padding-top: 2px 0 0 0;
+  margin-top: -2px;
+  border-radius: 50%;
+  position: relative;
+  background-color:transparent;
+  border: 0px;
+}
+
+#heart_svg {
+  line-height: 20px;
+  width: 24px;
+  height: 24px;
+  fill: rgba(0, 0, 0, 0.5);
+  pointer-events: auto;
+  stroke: rgb(255, 255, 255);
+  stroke-width: 2px;
+  text-align: center;
+}
+
+#img_wrap {
+  display:flex;
+  width: 271px;
+  height: 257.438px;
+}
+
+#img_wrap_img {
+  width: 271px;
+  height: auto;
+  border-radius: 15px;
+}
+
+/* ========================================================================== */
+
+/* container2_picture_left_slider css ======================================= */
+
+#picture_inner_component2 {
+  display: grid;
+  column-gap: 16px;
+  grid-template-columns: 115.5px 115.5px;
+  width: 247px;
+  height: 81.813px;
+  place-items: center;
+}
+
+#left_slider_wrap {
+  display: flex;
+  justify-self: flex-start;
+  width: 32px;
+  height: 32px;
+}
+
+#left_slider {
+  display: block;
+  box-sizing: border-box;
+  width: 32px;
+  height: 32px;
+
+}
+
+#left_slider_button{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border: 1px;
+  border-radius: 50%;
+}
+
+/* ========================================================================== */
+
+/* container2_picture_right_slider css ====================================== */
+
+#right_slider_wrap {
+  display: flex;
+  justify-self: flex-end;
+  width: 32px;
+  height: 32px;
+}
+
+#right_slider {
+  display: block;
+  box-sizing: border-box;
+  width: 32px;
+  height: 32px;
+}
+
+#right_slider_button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border: 1px;
+  border-radius: 50%;
+
+}
+
+#picture_inner_component3 {
+  display: grid;
+  column-gap: 16px;
+  grid-template-columns: 71.6562px 91.6719px 91.6719px;
+  width: 247px;
+  height: 81.813px;
+}
+
+
+/* ========================================================================== */
+
+/* footer css =============================================================== */
 
 footer {
   border: 1px solid #dddddd;
