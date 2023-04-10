@@ -81,6 +81,13 @@
 }
 
 /* 카테고리 줄 */
+.ctgLine {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-weight: 600;
+}
+
 .list {
   font-weight: 500;
   margin-right: 100px;
@@ -93,6 +100,51 @@
 .list:hover {
   color: rgb(95, 0, 128);
   text-decoration-line: underline;
+}
+
+.ctg {
+  margin-left: 110px;
+  margin-right: 150px;
+  display: flex;
+  width: 100px;
+  align-items: center;
+}
+
+.ctgContainer {
+  overflow-y: scroll;
+  height: 300px;
+  width: 250px;
+  position: absolute;
+  background-color: white;
+  border: 1px solid rgb(205, 205, 205);
+  z-index: 1;
+  top: 160px;
+  display: none;
+}
+
+.ctg:hover > .ctgList {
+  color: rgb(95, 0, 128);
+}
+
+.ctg:hover > .ctgContainer {
+  display: block;
+}
+
+.ctgName {
+  display: flex;
+  align-items: center;
+  height: 25px;
+  padding: 10px 0px 10px 10px;
+}
+
+.ctgName:hover {
+  background-color: rgb(244, 244, 244);
+  color: rgb(95, 0, 128);
+}
+
+.ctgImg {
+  width: 25px;
+  margin-right: 10px;
 }
 
 /* 배너 */
@@ -136,6 +188,14 @@
 .imgBox {
   width: 249px;
   height: 320px;
+  transform: scale(1);
+  transition: 0.5s;
+}
+
+.imgBox:hover {
+  transform: scale(1.025);
+  transition: 0.5s;
+  overflow-block: 0;
 }
 
 .kart {
@@ -235,4 +295,17 @@
   color: rgb(153, 153, 153);
   line-height: 14.5px;
   align-items: center;
+}
+
+/* 최하단 */
+.bottom {
+  background-color: rgb(247, 247, 247);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  font-size: 10px;
+  color: rgb(153, 153, 153);
+  line-height: 15px;
 }
