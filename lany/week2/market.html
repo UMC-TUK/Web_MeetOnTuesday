@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kurly</title>
+    <link href="index.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body style="overflow-x: hidden">
+    <!-- 회원가입, 로그인, 고객센터 -->
+    <div style="font-size: 12px; text-align: right; margin-right: 190px">
+      <span class="topBar" style="color: rgb(95, 0, 128)">회원가입</span>
+      <span class="topBar" style="border-left: 1px solid rgb(217, 217, 217); border-right: 1px solid rgb(217, 217, 217)">로그인</span>
+      <span class="help">
+        고객센터 ▾
+        <div class="helpContainer">
+          <div class="helpBox">
+            <a href="" class="helpList">공지사항</a>
+            <a href="" class="helpList">자주하는 질문</a>
+            <a href="" class="helpList">1:1 문의</a>
+            <a href="" class="helpList">대량주문 문의</a>
+          </div>
+        </div>
+      </span>
+    </div>
+    <!-- 검색어 입력 줄 -->
+    <div style="display: flex">
+      <div style="width: 100%; display: flex; justify-content: center; margin: 20px">
+        <img src="https://res.kurly.com/kurly/logo/bi_85x42.svg" alt="none" style="width: 82px" />
+        <div style="display: flex; align-items: center">
+          <a href="" class="marketM">마켓컬리</a>
+          <a class="beautyM" href="beauty.html">
+            뷰티컬리
+            <div style="font-size: 0.5em; padding-left: 3px; color: rgb(232, 108, 64); font-weight: 900">N</div>
+          </a>
+        </div>
+        <div
+          style="
+            padding: 15px 30px 15px 15px;
+            border: 1px solid rgb(87, 12, 123);
+            border-radius: 5px;
+            width: 380px;
+            color: rgb(153, 153, 153);
+            display: flex;
+            justify-content: space-between;
+          "
+        >
+          검색어를 입력해주세요.
+          <div style="display: flex; justify-content: center; align-items: center">
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzYiIGhlaWdodD0iMzYiIHZpZXdCb3g9IjAgMCAzNiAzNiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgzNnYzNkgweiIvPgogICAgICAgIDxnIHN0cm9rZT0iIzVGMDA4MCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2Utd2lkdGg9IjEuNyI+CiAgICAgICAgICAgIDxwYXRoIGQ9Im0yNi4wODEgMjYuMDgxLTQuMTItNC4xMk0xNi40NjcgMjMuMzM0YTYuODY3IDYuODY3IDAgMSAwIDAtMTMuNzM0IDYuODY3IDYuODY3IDAgMCAwIDAgMTMuNzM0eiIvPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+Cg=="
+              alt="none"
+              style="position: absolute"
+            />
+          </div>
+        </div>
+        <div style="display: flex; margin-left: 150px">
+          <img
+            src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzYiIGhlaWdodD0iMzYiIHZpZXdCb3g9IjAgMCAzNiAzNiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTTM2IDM2SDBWMGgzNnoiLz4KICAgICAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg4LjcgNikiIHN0cm9rZT0iIzMzMyIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIxLjciPgogICAgICAgICAgICA8cGF0aCBkPSJNOS4zMDYgMjRTMCAxNi41NDQgMCA5LjMwNmE5LjMwNiA5LjMwNiAwIDAgMSAxOC42MTIgMEMxOC42MTIgMTYuNTQ0IDkuMzA2IDI0IDkuMzA2IDI0eiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CiAgICAgICAgICAgIDxjaXJjbGUgc3Ryb2tlLWxpbmVjYXA9InNxdWFyZSIgY3g9IjkuMjEyIiBjeT0iOS4xMjMiIHI9IjIuNzg0Ii8+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4K"
+            alt="none"
+            style="margin-right: 20px"
+          />
+          <img
+            src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzYiIGhlaWdodD0iMzYiIHZpZXdCb3g9IjAgMCAzNiAzNiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxwYXRoIGQ9Ik0yOC45MjcgOC44OTNhNi40NiA2LjQ2IDAgMCAwLTkuMTM5IDBsLTEuODI5IDEuODI4LTEuODI3LTEuODI4YTYuNDYyIDYuNDYyIDAgMSAwLTkuMTQgOS4xMzhMOC44MiAxOS44Nmw4LjQzMiA4LjQzNGExIDEgMCAwIDAgMS40MTQgMGw4LjQzMy04LjQzNGgwbDEuODI4LTEuODI4YTYuNDYgNi40NiAwIDAgMCAwLTkuMTM4eiIgc3Ryb2tlPSIjMzMzIiBzdHJva2Utd2lkdGg9IjEuNyIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KPC9zdmc+Cg=="
+            alt="none"
+            style="margin-right: 20px"
+          />
+          <img
+            src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzYiIGhlaWdodD0iMzYiIHZpZXdCb3g9IjAgMCAzNiAzNiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTTM2IDM2SDBWMGgzNnoiLz4KICAgICAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg1LjE2NCA2LjU0NykiIHN0cm9rZT0iIzMzMyIgc3Ryb2tlLWxpbmVjYXA9InNxdWFyZSIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIxLjciPgogICAgICAgICAgICA8cGF0aCBkPSJtMjUuNjggMy42Ni0yLjcyIDExLjU3SDcuMzdMNC42NiAzLjY2eiIvPgogICAgICAgICAgICA8Y2lyY2xlIGN4PSIyMC41MiIgY3k9IjIwLjc4IiByPSIyLjE0Ii8+CiAgICAgICAgICAgIDxjaXJjbGUgY3g9IjkuODEiIGN5PSIyMC43OCIgcj0iMi4xNCIvPgogICAgICAgICAgICA8cGF0aCBkPSJNMCAwaDMuOGwxLjc2IDcuNSIvPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+Cg=="
+            alt="none"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- 카테고리 줄 -->
+    <div class="ctgLine">
+      <div class="ctg">
+        <img
+          src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTQiIHZpZXdCb3g9IjAgMCAxNiAxNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxwYXRoIGQ9Ik0wIDBoMTZ2MS43SDBWMHptMCA2LjE1aDE2djEuN0gwdi0xLjd6bTAgNi4xNWgxNlYxNEgwdi0xLjd6IiBmaWxsPSIjMzMzIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiLz4KPC9zdmc+Cg=="
+          alt="none"
+          style="margin-right: 10px; width: 20px"
+        />
+        <span class="ctgList">카테고리</span>
+        <!-- 카테고리 호버시 뜨는 창 -->
+        <div class="ctgContainer">
+          <div class="ctgName">
+            <img src="https://collection-image.kurly.com/site-category-groups/64/uLGEwpuF6ooQABMNjbdEyDZd6h2YTHdkCgU8yve3.png" alt="none" class="ctgImg" />
+            4월 뷰티컬리페스타
+            <span
+              style="
+                background-color: orangered;
+                color: white;
+                border-radius: 50px;
+                width: 7px;
+                padding: 3px 5px 2px 5px;
+                font-size: 10px;
+                font-weight: 800;
+                position: relative;
+                bottom: 2px;
+                margin-left: 5px;
+              "
+              >N</span
+            >
+          </div>
+          <div class="ctgName">
+            <img src="https://collection-image.kurly.com/site-category-groups/1/4IYbd0CEWkokpqiN00CAL9cDC2Q7nT101TDEn0tF.png" alt="none" class="ctgImg" />
+            채소
+          </div>
+          <div class="ctgName">
+            <img src="https://collection-image.kurly.com/site-category-groups/2/DNXCcUaXoXakDOdHiGhIMCNUeUjJioG9EyeQ7RRX.png" alt="none" class="ctgImg" />
+            과일·견과·쌀
+          </div>
+          <div class="ctgName">
+            <img src="https://collection-image.kurly.com/site-category-groups/3/fivaoZPBTeqaDswJUgr3k0xMV0von36Qb9qnn7ZZ.png" alt="none" class="ctgImg" />
+            수산·해산·건어물
+          </div>
+          <div class="ctgName">
+            <img src="https://collection-image.kurly.com/site-category-groups/4/jj6zZg2sY94aytlc2k1udIAmWWvmUignR9VYaMcm.png" alt="none" class="ctgImg" />
+            정육·계란
+          </div>
+          <div class="ctgName">
+            <img src="https://collection-image.kurly.com/site-category-groups/5/CkyoRnUe2q9ngIOLW3bJPRYBw9xq9BHZ3fNQIq1c.png" alt="none" class="ctgImg" />
+            국·반찬·메인요리
+          </div>
+          <div class="ctgName">
+            <img src="https://collection-image.kurly.com/site-category-groups/6/kwat5Szmq0ONTpMd4hlbcGmCOBd3FsMPyTzWxKBb.png" alt="none" class="ctgImg" />
+            샐러드·간편식
+          </div>
+          <div class="ctgName">
+            <img src="https://collection-image.kurly.com/site-category-groups/7/CL0LpJynh8Nh2Vqmnm62RVTPePWVU84VkWwQPjdO.png" alt="none" class="ctgImg" />
+            면·양념·오일
+          </div>
+          <div class="ctgName">
+            <img src="https://collection-image.kurly.com/site-category-groups/8/bKllScRqF9gQ5q58LcmBfOOhgBrCOdVypPiRvQkL.png" alt="none" class="ctgImg" />
+            생수·음료·우유·커피
+          </div>
+          <div class="ctgName">
+            <img src="https://collection-image.kurly.com/site-category-groups/9/5qKRHLtIeBWLxUPa1g3koUhqsAkc39YjtMnyIXCJ.png" alt="none" class="ctgImg" />
+            간식·과자·떡
+          </div>
+        </div>
+      </div>
+      <a href="" class="list">신상품</a>
+      <a href="" class="list">베스트</a>
+      <a href="" class="list">알뜰쇼핑</a>
+      <a href="" class="list">특가/혜택</a>
+
+      <div
+        style="
+          font-weight: 500;
+          margin-left: 40px;
+          margin-right: 100px;
+          border: 1px solid rgb(238, 238, 238);
+          border-radius: 20px;
+          padding: 7px 15px 7px 15px;
+          font-size: 13px;
+        "
+      >
+        <span style="color: rgb(86, 12, 123)">샛별・택배</span><span style="color: rgb(102, 102, 102)"> 배송안내</span>
+      </div>
+    </div>
+    <!-- 배너 -->
+    <div class="banner">
+      <img
+        src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTIiIGhlaWdodD0iNTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxIDEpIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgICAgIDxjaXJjbGUgZmlsbC1vcGFjaXR5PSIuMiIgZmlsbD0iIzAwMCIgY3g9IjI1IiBjeT0iMjUiIHI9IjI1Ii8+CiAgICAgICAgPHBhdGggZD0iTTIyLjI4NSAzMy42OTlhMSAxIDAgMCAwIDEuMzE5LjA5OGwuMDk1LS4wODIgOC03LjgxN2ExIDEgMCAwIDAgLjEwOC0xLjMwNmwtLjA4LS4wOTYtNy43MjMtOC4xODJhMSAxIDAgMCAwLTEuNTM1IDEuMjc2bC4wOC4wOTYgNy4wNDkgNy40NjktNy4yOTcgNy4xM2ExIDEgMCAwIDAtLjA5OCAxLjMxOWwuMDgyLjA5NXoiIGZpbGw9IiNGRkYiIGZpbGwtcnVsZT0ibm9uemVybyIvPgogICAgPC9nPgo8L3N2Zz4K"
+        alt="none"
+        class="arrowL"
+      />
+      <img
+        src="https://product-image.kurly.com/cdn-cgi/image/quality=85/banner/main/pc/img/b7607924-0e4d-4d0b-a14d-0bb4e65e2a4c.jpg"
+        alt="none"
+        style="margin-top: 10px"
+      />
+      <img
+        src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTIiIGhlaWdodD0iNTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxIDEpIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgICAgIDxjaXJjbGUgZmlsbC1vcGFjaXR5PSIuMiIgZmlsbD0iIzAwMCIgY3g9IjI1IiBjeT0iMjUiIHI9IjI1Ii8+CiAgICAgICAgPHBhdGggZD0iTTIyLjI4NSAzMy42OTlhMSAxIDAgMCAwIDEuMzE5LjA5OGwuMDk1LS4wODIgOC03LjgxN2ExIDEgMCAwIDAgLjEwOC0xLjMwNmwtLjA4LS4wOTYtNy43MjMtOC4xODJhMSAxIDAgMCAwLTEuNTM1IDEuMjc2bC4wOC4wOTYgNy4wNDkgNy40NjktNy4yOTcgNy4xM2ExIDEgMCAwIDAtLjA5OCAxLjMxOWwuMDgyLjA5NXoiIGZpbGw9IiNGRkYiIGZpbGwtcnVsZT0ibm9uemVybyIvPgogICAgPC9nPgo8L3N2Zz4K"
+        alt="none"
+        class="arrowR"
+      />
+    </div>
+    <!-- 이 상품 어때요? -->
+    <div style="display: flex; flex-direction: column; align-items: center; margin-top: 90px">
+      <span style="font-size: 30px; font-weight: 500; margin-bottom: 25px">이 상품 어때요?</span>
+      <div style="display: flex; margin-left: 50px">
+        <div class="imgWrap">
+          <div style="display: flex">
+            <img src="https://img-cf.kurly.com/shop/data/goods/165708868919l0.jpg" alt="none" class="imgBox" />
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDUiIGhlaWdodD0iNDUiIHZpZXdCb3g9IjAgMCA0NSA0NSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGNpcmNsZSBmaWxsPSIjMkEwMDM4IiBvcGFjaXR5PSIuNSIgY3g9IjIyLjUiIGN5PSIyMi41IiByPSIyMi41Ii8+CiAgICAgICAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTEuMDMgMTQuMzgpIiBzdHJva2U9IiNGRkYiIHN0cm9rZS1saW5lY2FwPSJzcXVhcmUiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPgogICAgICAgICAgICA8cGF0aCBzdHJva2Utd2lkdGg9IjEuNCIgZD0ibTIwLjQ2IDIuOTEtMi4xNyA5LjIzSDUuODdMMy43MSAyLjkxeiIvPgogICAgICAgICAgICA8Y2lyY2xlIHN0cm9rZS13aWR0aD0iMS4yIiBjeD0iMTYuMzUiIGN5PSIxNi44NiIgcj0iMS43Ii8+CiAgICAgICAgICAgIDxjaXJjbGUgc3Ryb2tlLXdpZHRoPSIxLjIiIGN4PSI3LjgyIiBjeT0iMTYuODYiIHI9IjEuNyIvPgogICAgICAgICAgICA8cGF0aCBzdHJva2Utd2lkdGg9IjEuNCIgZD0iTTAgMGgzLjAybDEuNDEgNS45OCIvPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+Cg=="
+              alt="none"
+              class="kart"
+            />
+          </div>
+          <div class="deliver">샛별배송</div>
+          <div class="product">[KF365] 노르웨이 생연어회 200g (냉장)</div>
+          <div class="content">혼자서도 부담 없는 연어회</div>
+          <div class="price">13,900원</div>
+          <div class="review">
+            <img src="images/typing.png" alt="none" class="reviewIcon" />
+            <span class="reviewNum">후기 9,999+</span>
+          </div>
+        </div>
+        <div class="imgWrap">
+          <div style="display: flex">
+            <img src="https://img-cf.kurly.com/shop/data/goods/1656308919620l0.jpg" alt="none" class="imgBox" />
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDUiIGhlaWdodD0iNDUiIHZpZXdCb3g9IjAgMCA0NSA0NSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGNpcmNsZSBmaWxsPSIjMkEwMDM4IiBvcGFjaXR5PSIuNSIgY3g9IjIyLjUiIGN5PSIyMi41IiByPSIyMi41Ii8+CiAgICAgICAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTEuMDMgMTQuMzgpIiBzdHJva2U9IiNGRkYiIHN0cm9rZS1saW5lY2FwPSJzcXVhcmUiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPgogICAgICAgICAgICA8cGF0aCBzdHJva2Utd2lkdGg9IjEuNCIgZD0ibTIwLjQ2IDIuOTEtMi4xNyA5LjIzSDUuODdMMy43MSAyLjkxeiIvPgogICAgICAgICAgICA8Y2lyY2xlIHN0cm9rZS13aWR0aD0iMS4yIiBjeD0iMTYuMzUiIGN5PSIxNi44NiIgcj0iMS43Ii8+CiAgICAgICAgICAgIDxjaXJjbGUgc3Ryb2tlLXdpZHRoPSIxLjIiIGN4PSI3LjgyIiBjeT0iMTYuODYiIHI9IjEuNyIvPgogICAgICAgICAgICA8cGF0aCBzdHJva2Utd2lkdGg9IjEuNCIgZD0iTTAgMGgzLjAybDEuNDEgNS45OCIvPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+Cg=="
+              alt="none"
+              class="kart"
+            />
+          </div>
+          <div class="deliver">샛별배송</div>
+          <div class="product">[면사랑] 평양식 고기물냉면 밀키트 (2인분)</div>
+          <div class="content">중독성 있는 슴슴한 매력</div>
+          <div class="price">11,900원</div>
+          <div class="review">
+            <img src="images/typing.png" alt="none" class="reviewIcon" />
+            <span class="reviewNum">후기 178</span>
+          </div>
+        </div>
+        <div class="imgWrap">
+          <div style="display: flex">
+            <img src="https://img-cf.kurly.com/shop/data/goods/1652406127793l0.jpg" alt="none" class="imgBox" />
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDUiIGhlaWdodD0iNDUiIHZpZXdCb3g9IjAgMCA0NSA0NSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGNpcmNsZSBmaWxsPSIjMkEwMDM4IiBvcGFjaXR5PSIuNSIgY3g9IjIyLjUiIGN5PSIyMi41IiByPSIyMi41Ii8+CiAgICAgICAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTEuMDMgMTQuMzgpIiBzdHJva2U9IiNGRkYiIHN0cm9rZS1saW5lY2FwPSJzcXVhcmUiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPgogICAgICAgICAgICA8cGF0aCBzdHJva2Utd2lkdGg9IjEuNCIgZD0ibTIwLjQ2IDIuOTEtMi4xNyA5LjIzSDUuODdMMy43MSAyLjkxeiIvPgogICAgICAgICAgICA8Y2lyY2xlIHN0cm9rZS13aWR0aD0iMS4yIiBjeD0iMTYuMzUiIGN5PSIxNi44NiIgcj0iMS43Ii8+CiAgICAgICAgICAgIDxjaXJjbGUgc3Ryb2tlLXdpZHRoPSIxLjIiIGN4PSI3LjgyIiBjeT0iMTYuODYiIHI9IjEuNyIvPgogICAgICAgICAgICA8cGF0aCBzdHJva2Utd2lkdGg9IjEuNCIgZD0iTTAgMGgzLjAybDEuNDEgNS45OCIvPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+Cg=="
+              alt="none"
+              class="kart"
+            />
+          </div>
+          <div class="deliver">샛별배송</div>
+          <div class="product">[코디] 4겹 천연펄프 더 도톰한 비건 롤화장지 (30m X 30롤)</div>
+          <div class="content">비건 인증을 획득한 4겹 화장지</div>
+          <div class="price">
+            <span style="color: orangered; font-weight: 700">5%</span>
+            21,200원
+          </div>
+          <span class="regularPrice">22,500원</span>
+          <div class="review">
+            <img src="images/typing.png" alt="none" class="reviewIcon" />
+            <span class="reviewNum">후기 232</span>
+          </div>
+        </div>
+        <div class="imgWrap">
+          <div style="display: flex">
+            <img src="https://img-cf.kurly.com/shop/data/goods/165443628540l0.jpg" alt="none" class="imgBox" />
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDUiIGhlaWdodD0iNDUiIHZpZXdCb3g9IjAgMCA0NSA0NSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGNpcmNsZSBmaWxsPSIjMkEwMDM4IiBvcGFjaXR5PSIuNSIgY3g9IjIyLjUiIGN5PSIyMi41IiByPSIyMi41Ii8+CiAgICAgICAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTEuMDMgMTQuMzgpIiBzdHJva2U9IiNGRkYiIHN0cm9rZS1saW5lY2FwPSJzcXVhcmUiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPgogICAgICAgICAgICA8cGF0aCBzdHJva2Utd2lkdGg9IjEuNCIgZD0ibTIwLjQ2IDIuOTEtMi4xNyA5LjIzSDUuODdMMy43MSAyLjkxeiIvPgogICAgICAgICAgICA8Y2lyY2xlIHN0cm9rZS13aWR0aD0iMS4yIiBjeD0iMTYuMzUiIGN5PSIxNi44NiIgcj0iMS43Ii8+CiAgICAgICAgICAgIDxjaXJjbGUgc3Ryb2tlLXdpZHRoPSIxLjIiIGN4PSI3LjgyIiBjeT0iMTYuODYiIHI9IjEuNyIvPgogICAgICAgICAgICA8cGF0aCBzdHJva2Utd2lkdGg9IjEuNCIgZD0iTTAgMGgzLjAybDEuNDEgNS45OCIvPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+Cg=="
+              alt="none"
+              class="kart"
+            />
+          </div>
+          <div class="deliver">샛별배송</div>
+          <div class="product">[유시몰] 여행용세트_포켓몬</div>
+          <div class="content">포켓몬 에디션으로 만나는 칫솔 치약 세트</div>
+          <div class="price">
+            <span style="color: orangered; font-weight: 700">8%</span>
+            9,900원
+          </div>
+          <span class="regularPrice">10,800원</span>
+          <div class="review">
+            <img src="images/typing.png" alt="none" class="reviewIcon" />
+            <span class="reviewNum">후기 113</span>
+          </div>
+        </div>
+        <img
+          src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgICA8ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgICAgIDxjaXJjbGUgc3Ryb2tlPSIjRTNFM0UzIiBzdHJva2Utd2lkdGg9IjEuMiIgZmlsbD0iI0ZGRiIgZmlsbC1ydWxlPSJub256ZXJvIiBjeD0iMzIiIGN5PSIzMiIgcj0iMzEuNCIvPgogICAgICAgIDxwYXRoIHN0cm9rZT0iIzVGMDA4MCIgc3Ryb2tlLXdpZHRoPSIxLjgiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgZD0ibTI4LjQ0NCAyMS4zMzMgMTEuMzc4IDExLjY5OC0xMS4zNzggMTEuMDU4Ii8+CiAgICA8L2c+Cjwvc3ZnPgo="
+          alt="none"
+          style="height: 60px; position: relative; right: 50px; top: 124.5px"
+        />
+      </div>
+    </div>
+    <!-- 자세한 사항 -->
+    <hr style="border: 1px solid rgb(235, 235, 235); margin-bottom: 30px" />
+    <div style="display: flex; justify-content: center">
+      <div style="margin-right: 200px">
+        <div style="padding-bottom: 17px; font-weight: 500; font-size: 20px; line-height: 29px">고객행복센터</div>
+        <div style="padding-bottom: 20px; font-size: 28px; line-height: 40px; font-weight: 700">
+          1644-1107 <span style="margin-left: 8px; font-weight: normal; font-size: 16px">월~토요일 오전 7시 - 오후 6시</span>
+        </div>
+        <div>
+          <div class="inquire">
+            <div class="inquireList">카카오톡 문의</div>
+            <div class="inquireTime">
+              <div>월~토요일 | 오전7시 - 오후6시</div>
+              <div>일/공휴일 | 오전7시 - 오후1시</div>
+            </div>
+          </div>
+          <div class="inquire">
+            <div class="inquireList">1:1 문의</div>
+            <div class="inquireTime">
+              <div>365일</div>
+              <div>고객센터 운영시간에 순차적으로 답변드리겠습니다.</div>
+            </div>
+          </div>
+          <div class="inquire">
+            <div class="inquireList">대량주문 문의</div>
+            <div class="inquireTime">
+              <div>월~금요일 | 오전9시 - 오후6시</div>
+              <div>점심시간 | 낮12시 - 오후1시</div>
+            </div>
+          </div>
+        </div>
+        <div style="font-size: 12px; color: rgb(153, 153, 153)">
+          <div>비회원 문의:help@kurlycorp.com</div>
+          <div>비회원 대량주문 문의:kurlygift@kurlycorp.com</div>
+        </div>
+      </div>
+      <div>
+        <div style="margin-bottom: 29px">
+          <a class="about" href="">컬리소개</a>
+          <a class="about" href="">컬리소개영상</a>
+          <a class="about" href="">인재채용</a>
+          <a class="about" href="">이용약관</a>
+          <a class="about" href="">개인정보처리방침</a>
+          <a class="about" href="">이용안내</a>
+        </div>
+        <div style="margin-bottom: 40px; color: rgb(153, 153, 153); font-size: 12px; font-weight: 400; line-height: 18px">
+          범인명(상호):주식회사 컬리 | 사업자등록번호:261-81-23567 <span style="color: rgb(95, 0, 128)">사업자정보 확인</span><br />
+          통신판매업:제2018-서울강남-01646호 | 개인정보보호책임자:이원준<br />
+          주소:서울특별시 강남구 테헤란로 133,18층(역삼동) | 대표이사:김슬아<br />
+          입점문의:<span style="color: rgb(95, 0, 128)">입점문의하기</span> | 제휴문의:<span style="color: rgb(95, 0, 128)">business@kurlycorp.com</span><br />
+          채용문의:<span style="color: rgb(95, 0, 128)">recruit@kurlycorp.com</span><br />
+          팩스:070-7500-6098<br />
+        </div>
+        <div>
+          <img class="sns" src="https://res.kurly.com/pc/ico/1810/ico_instagram.png" alt="none" />
+          <img class="sns" src="https://res.kurly.com/pc/ico/1810/ico_fb.png" alt="none" />
+          <img class="sns" src="https://res.kurly.com/pc/ico/1810/ico_blog.png" alt="none" />
+          <img class="sns" src="https://res.kurly.com/pc/ico/1810/ico_naverpost.png" alt="none" />
+          <img class="sns" src="https://res.kurly.com/pc/ico/1810/ico_youtube.png" alt="none" />
+        </div>
+      </div>
+    </div>
+    <hr style="width: 1057px; border: 1px solid rgb(235, 235, 235); margin-top: 30px" />
+    <!-- 협찬 -->
+    <div style="display: flex; justify-content: center; margin-top: 30px; margin-bottom: 30px">
+      <div class="coworkers">
+        <img src="https://res.kurly.com/pc/ico/2208/logo_isms.svg" alt="none" style="margin-right: 10px" />
+        <div style="width: 180px">[인증범위]컬리 쇼핑몰 서비스 개발-운영<br />(심사받지 않은 물리적 인프라 제외)<br />[유효기간]2022.01.19~2025.01.18</div>
+      </div>
+      <div class="coworkers">
+        <img src="https://res.kurly.com/pc/ico/2208/logo_privacy.svg" alt="none" style="margin-right: 10px; width: 34px" />
+        <div style="width: 200px">개인정보보호 우수 웹사이트 ・<br />개인정보처리시스템 인증 (ePRIVACY PLUS)</div>
+      </div>
+      <div class="coworkers">
+        <img src="https://res.kurly.com/pc/ico/2208/logo_tosspayments.svg" alt="none" style="margin-right: 10px; width: 102px" />
+        <div style="width: 190px">토스페이먼츠 구매안전(에스크로)<br />서비스를 이용하실 수 있습니다.</div>
+      </div>
+      <div class="coworkers">
+        <img src="https://res.kurly.com/pc/ico/2208/logo_wooriBank.svg" alt="none" style="margin-right: 10px; width: 34px" />
+        <div style="width: 220px">고객님이 현금으로 결제한 금액에 대해 우리은행과<br />채무지급보증 계약을 체결하여 안전거래를 보장하고<br />있습니다.</div>
+      </div>
+    </div>
+    <!-- 최하단 -->
+    <div class="bottom">
+      컬리에서 판매되는 상품 중에는 컬리에 입점한 개별 판매자가 판매하는 마켓플레이스(오픈마켓) 상품이 포함되어 있습니다. <br />마켓플레이스(오픈마켓) 상품의
+      경우 컬리는 통신판매중개자로서 통신판매의 당사자가 아닙니다. 컬리는 해당 상품의 주문, 품질, 교환/환불 등 의무와 책임을 부담하지 않습니다. <br /><br />
+      © KURLY CORP. ALL RIGHTS RESERVED
+    </div>
+  </body>
+</html>

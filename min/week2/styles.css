@@ -77,6 +77,58 @@ nav > ul {
 header {
   height: 30rem;
 }
+.slider {
+  padding-top: 4rem;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  flex-wrap: nowrap;
+}
+
+.slides {
+  display: flex;
+}
+
+.slide {
+  position: relative;
+  flex-shrink: 0;
+  width: 80%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  transition: left 0.15s;
+}
+.slide img {
+  width: 100%;
+}
+.slide_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: calc(-20%, 20rem);
+
+  width: 30px;
+  height: 80px;
+
+  border-radius: 20px;
+  border: none;
+  background-color: #e2e2e28b;
+  cursor: pointer;
+}
+
+.slide_prev_button {
+  left: 150px;
+  top: 11rem;
+}
+.slide_next_button {
+  right: 150px;
+  top: 11rem;
+}
 
 /*섹션*/
 section {
