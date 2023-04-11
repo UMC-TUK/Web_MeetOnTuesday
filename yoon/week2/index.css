@@ -132,7 +132,7 @@ table {
 
 #main {
   width: 941px;
-  height: 4980px;
+  height: 1300px;
 }
 
 body {
@@ -567,7 +567,7 @@ header {
   position: relative;
   /* border: 1px solid black; */
   /*Box*/
-  height: 4980px;
+  height: 1300px;
   width: 941px;
   /*===*/
   top: 80px;
@@ -624,6 +624,7 @@ header {
 }
 
 .picture {
+  position: relative;
 }
 
 .picture_inner_components_wrap {
@@ -687,22 +688,21 @@ header {
 .img_wrap {
   width: 271px;
   height: 257.438px;
-  /* overflow: hidden; */
+  overflow: hidden;
   margin: 0 auto;
-  /* position: relative; */
+  position: absolute;
 }
 
 .img_slides {
   display: flex;
   /* overflow: hidden; */
   transition: left 0.5s ease-out;
-  /* position: absolute; */
+  position: absolute;
 }
 
 .img_wrap_img_li {
-
   padding: 0 0 0 0;
-  width: 100%;
+  width: 271px;
   height: 257.438px;
 }
 
@@ -748,6 +748,7 @@ header {
   border: 1px;
   border-radius: 50%;
   cursor: pointer;
+  /* visibility: hidden; */
 }
 
 /* ========================================================================== */
