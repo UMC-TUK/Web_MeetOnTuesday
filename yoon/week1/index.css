@@ -138,6 +138,8 @@ table {
 body {
   overflow-x: hidden;
   overflow-y: auto;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
+    Helvetica Neue, sans-serif;
 }
 
 label {
@@ -230,6 +232,7 @@ header {
   border-bottom-left-radius: 21px;
   border: 1px solid #ccc;
   border-right: 0px;
+  cursor: pointer;
 }
 
 #search_button2 {
@@ -241,6 +244,7 @@ header {
   border-left: 0px;
   border-right: 0px;
   border-bottom: 1px solid #ccc;
+  cursor: pointer;
 }
 
 #search_button3 {
@@ -252,6 +256,7 @@ header {
   border-bottom-right-radius: 21px;
   border: 1px solid #ccc;
   border-left: 0px;
+  cursor: pointer;
 }
 
 #search_button1_div {
@@ -359,6 +364,10 @@ header {
   align-items: center;
 }
 
+#your_space_airbnb:hover {
+  background-color: #f5f5f5;
+}
+
 #earth_icon {
   border-radius: 50%;
   width: 42px;
@@ -366,6 +375,10 @@ header {
   cursor: pointer;
   border: 0px;
   background-color: #ffffff;
+}
+
+#earth_icon:hover {
+  background-color: #f5f5f5;
 }
 
 #your_info_button {
@@ -381,6 +394,10 @@ header {
   cursor: pointer;
   background-color: #ffffff;
   border: 0.5px solid #ccc;
+}
+
+#nav_button:hover {
+  box-shadow: 0px 1.5px 4px 0px #cecece;
 }
 
 #your_info_button_1_svg {
@@ -523,7 +540,6 @@ header {
 #filter_button_span_letter {
   font-size: 12px;
   font-weight: 800;
-
 }
 
 /* ========================================================================== */
@@ -587,10 +603,10 @@ header {
   margin-bottom: 12px;
   width: 271px;
   height: 257.438px;
+  cursor: pointer;
 }
 
 #picture {
-
 }
 
 #picture_inner_components_wrap {
@@ -631,7 +647,7 @@ header {
   margin-top: -2px;
   border-radius: 50%;
   position: relative;
-  background-color:transparent;
+  background-color: transparent;
   border: 0px;
 }
 
@@ -646,8 +662,12 @@ header {
   text-align: center;
 }
 
+/* ========================================================================== */
+
+/* container2_picture_img css =============================================== */
+
 #img_wrap {
-  display:flex;
+  display: flex;
   width: 271px;
   height: 257.438px;
 }
@@ -683,10 +703,9 @@ header {
   box-sizing: border-box;
   width: 32px;
   height: 32px;
-
 }
 
-#left_slider_button{
+#left_slider_button {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -722,7 +741,6 @@ header {
   height: 30px;
   border: 1px;
   border-radius: 50%;
-
 }
 
 #picture_inner_component3 {
@@ -733,6 +751,75 @@ header {
   height: 81.813px;
 }
 
+/* ========================================================================== */
+
+/* container2_description css =============================================== */
+
+#description {
+  display: grid;
+  grid-template-columns: 216.766px 46.2344px;
+  grid-template-rows: 19px 19px 19px 25px;
+  column-gap: 8px;
+  line-height: 19px;
+  row-gap: 2px;
+  cursor: pointer;
+}
+
+#description_title {
+  box-sizing: border-box;
+  font-size: 15px;
+  font-weight: 600;
+  text-overflow: ellipsis;
+}
+
+#description_view {
+  box-sizing: border-box;
+  color: rgb(113, 113, 113);
+  font-size: 15px;
+  grid-column-end: -1;
+  grid-column-start: 1;
+  text-overflow: ellipsis;
+}
+
+#description_date {
+  box-sizing: border-box;
+  color: rgb(113, 113, 113);
+  font-size: 15px;
+  display: -webkit-box;
+  grid-column-end: -1;
+  grid-column-start: 1;
+  text-overflow: ellipsis;
+}
+
+#description_price {
+  display: block;
+  box-sizing: border-box;
+  grid-column-end: -1;
+  grid-column-start: 1;
+  text-overflow: ellipsis;
+  margin-top: 6px;
+  font-weight: 550;
+  font-size: 15px;
+}
+
+#description_rate {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  height: 19px;
+  grid-column-end: -1;
+  grid-column-start: -2;
+  font-size: 15px;
+}
+
+#description_rate_svg {
+  height: 12px;
+  width: 12px;
+}
+
+#description_rate_num {
+  margin-left: 4px;
+}
 
 /* ========================================================================== */
 
