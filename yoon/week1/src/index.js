@@ -1,10 +1,20 @@
 import "./styles.css";
 
-document.getElementById("app").innerHTML = `
-<h1>서버는 1234 포트번호 위에서만 적용이 된다</h1>
-<div>
-  We use the same configuration as Parcel to bundle this sandbox, you can find more
-  info about Parcel 
-  <a href="https://parceljs.org" target="_blank" rel="noopener noreferrer">here</a>.
-</div>
-`;
+const imgslides = document.querySelector('.img_slides');
+const imgslide = document.querySelectorAll('.img_wrap li');
+let currentIdx = 0;
+const slideCount = imgslide.length;
+const leftBtn = document.querySelector('.left_slider_button');
+const rightBtn = document.querySelector('.right_slider_button');
+let slideWidth = 271;
+
+imgslides.style.width = slideWidth*slideCount + 'px';
+
+function moveImgSlide(num) {
+  imgslides.style.left = num * 270 + 'px';
+  currentIdx = num;
+}
+
+rightBtn.addEventListener('click', function() {
+  moveImgSlide(currentIdx + 1);
+});
