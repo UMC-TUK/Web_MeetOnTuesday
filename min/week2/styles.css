@@ -78,22 +78,24 @@ header {
   height: 30rem;
 }
 .slider {
-  padding-top: 4rem;
-  position: relative;
-  width: 100%;
+  padding-top: 3rem;
   overflow: hidden;
   flex-wrap: nowrap;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
 }
 
 .slides {
   display: flex;
+  width: 100%;
 }
 
 .slide {
   position: relative;
   flex-shrink: 0;
-  width: 80%;
-  height: 300px;
+  width: 70%;
+  height: 23rem;
   display: flex;
   align-items: center;
   justify-content: center;
