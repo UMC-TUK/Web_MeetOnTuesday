@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
-import PlayGroundPage from 'pages/PlaygroundPage';
+import MainPage from 'pages/MainPage';
 
 function App() {
   return (
     <div>
-      <PlayGroundPage />
+      <MainPage />
     </div>
   );
 }
