@@ -1,0 +1,16 @@
+.footer {
+  border: 1px solid black;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: grid;
+  grid-template: repeat(2,auto) / repeat(3,33.333%);
+  grid-template-areas:
+        'left center right'
+        'bottom bottom bottom';
+}
+
+.footer_wrap {
+  grid-area: bottom;
+  height: 88px;
+}

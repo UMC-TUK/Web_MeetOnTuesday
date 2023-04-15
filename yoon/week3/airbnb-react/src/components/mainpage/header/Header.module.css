@@ -1,0 +1,7 @@
+.header {
+  border: 1px solid red;
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+}
