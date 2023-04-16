@@ -1,0 +1,92 @@
+.yourinfo {
+  flex: 1 0 140px;
+  /* border: 1px solid pink; */
+  display: flex;
+  flex-direction: row;
+  padding: 0 160px 0 0;
+  justify-content: flex-end;
+}
+
+.yourinfo_yourspace {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 8px;
+}
+
+.yourinfo_yourspace_a {
+  padding: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  color: black;
+  border-radius: 20px;
+  
+}
+
+.yourinfo_yourspace_a:hover {
+  background-color: #f7f7f7;
+}
+
+.yourinfo_svg_wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 42px;
+  border-radius: 20px;
+
+}
+
+.yourinfo_yourspace_svg {
+  display: black;
+  height: 16px;
+  width: 16px;
+  fill: currentColor;
+  border-radius: 20px;
+}
+.yourinfo_svg_wrap:hover {
+  background-color: #f7f7f7;
+}
+
+.yourinfo_yourinfo {
+  width: 79px;
+  height: 42px;
+  align-self: center;
+
+}
+
+.yourinfo_yourinfo_button {
+  width: 77px;
+  height: 42px;
+  display: flex;
+  flex-direction: row;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 20px;
+  padding: 5px 5px 5px 12px;
+  border: 1px solid #ccc;
+  background-color: white;
+}
+
+
+.yourinfo_yourinfo_button1 {
+  display: block; 
+  fill: none; 
+  height: 16px; 
+  width: 16px; 
+  stroke: currentcolor; 
+  stroke-width: 3; 
+  overflow: visible;
+}
+
+.yourinfo_yourinfo_button2 {
+  width: 30px;
+  height: 30px;
+  display: block;
+  margin-left: 12px;
+  fill: currentcolor;
+  color: #717171;
+}
+
+

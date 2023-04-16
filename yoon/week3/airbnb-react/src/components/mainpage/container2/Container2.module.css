@@ -4,4 +4,19 @@
   height: 2000px;
   top: 178px;
   position: relative;
+  padding: 20px 80px 0 80px;
+}
+
+.container2_wrap {
+  height: 100%;
+  margin: 24px 0 24px 0;
+}
+
+.container2_components {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 270.5px 270.5px 270.5px 270.5px 270.5px 270.5px;
+  grid-template-rows: 357.438px 357.438px 357.438px 357.438px 357.438px;
+  grid-column-gap: 24px;
+  grid-row-gap: 40px;
 }
