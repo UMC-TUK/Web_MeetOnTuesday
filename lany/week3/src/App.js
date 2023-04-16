@@ -1,23 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
-import TopBar from "./components/TopBar";
-import SearchBar from "./components/SearchBar";
-import CategoryBar from "./components/CategoryBar";
-import Banner from "./components/Banner";
-import Products from "./components/Products";
-import Bottom from "./components/Bottom";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import Market from "./pages/Market";
+import Beauty from "./pages/Beauty";
+import Root from "./pages/Root";
 
 function App() {
-  return (
-    <>
-      <TopBar />
-      <SearchBar />
-      <CategoryBar />
-      <Banner />
-      <Products />
-      <Bottom />
-    </>
-  );
+  const [isMarket, setIsMarket] = useState(true);
+  const setLocation = (loc) => {
+    setIsMarket(loc);
+  };
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <Root />,
+      children: [
+        { path: "/", element: <Market isMarket={isMarket} setLocation={setLocation} /> },
+        { path: "/beauty", element: <Beauty isMarket={isMarket} setLocation={setLocation} /> },
+      ],
+    },
+  ]);
+  return <RouterProvider router={router} />;
 }
 
 export default App;

@@ -78,6 +78,7 @@
 .marketB:hover {
   color: rgb(95, 0, 128);
   font-weight: 600;
+  cursor: pointer;
 }
 
 /* 카테고리 줄 */
@@ -100,6 +101,7 @@
 .list:hover {
   color: rgb(95, 0, 128);
   text-decoration-line: underline;
+  cursor: pointer;
 }
 
 .ctg {
@@ -124,10 +126,12 @@
 
 .ctg:hover > .ctgList {
   color: rgb(95, 0, 128);
+  cursor: pointer;
 }
 
 .ctg:hover > .ctgContainer {
   display: block;
+  cursor: pointer;
 }
 
 .ctgName {
@@ -169,6 +173,10 @@
 
 .arrowR {
   right: 460px;
+}
+
+.banner:hover {
+  cursor: pointer;
 }
 
 .banner:hover > .arrowL,

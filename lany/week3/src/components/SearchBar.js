@@ -1,6 +1,17 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
-export default function SearchBar() {
+export default function SearchBar({ isMarket, setLocation }) {
+  const navigate = useNavigate();
+
+  const setLocMarket = () => {
+    setLocation(true);
+    navigate("/");
+  };
+  const setLocBeauty = () => {
+    setLocation(false);
+    navigate("/beauty");
+  };
   return (
     <>
       {/* 검색어 입력 줄 */}
@@ -8,8 +19,10 @@ export default function SearchBar() {
         <div style={{ width: "100%", display: "flex", justifyContent: "center", margin: "20px" }}>
           <img src="https://res.kurly.com/kurly/logo/bi_85x42.svg" alt="none" style={{ width: "82px" }} />
           <div style={{ display: "flex", alignItems: "center" }}>
-            <div class="marketB">마켓컬리</div>
-            <div class="beautyB">
+            <div class={isMarket ? "marketM" : "marketB"} onClick={setLocMarket}>
+              마켓컬리
+            </div>
+            <div class={isMarket ? "beautyM" : "beautyB"} onClick={setLocBeauty}>
               뷰티컬리
               <div style={{ fontSize: "0.5em", paddingLeft: "3px", color: "rgb(232, 108, 64)", fontWeight: "900" }}>N</div>
             </div>

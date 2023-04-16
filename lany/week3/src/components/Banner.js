@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Banner() {
+export default function Banner({ isMarket }) {
   return (
     <>
       {/* 배너  */}
@@ -11,7 +11,11 @@ export default function Banner() {
           class="arrowL"
         />
         <img
-          src="https://product-image.kurly.com/cdn-cgi/image/quality=85/banner/main/pc/img/8c9af4e2-03ca-45ec-9a2a-926b969018ea.jpg"
+          src={
+            isMarket
+              ? "https://product-image.kurly.com/cdn-cgi/image/quality=85/banner/main/pc/img/b7607924-0e4d-4d0b-a14d-0bb4e65e2a4c.jpg"
+              : "https://product-image.kurly.com/cdn-cgi/image/quality=85/banner/main/pc/img/8c9af4e2-03ca-45ec-9a2a-926b969018ea.jpg"
+          }
           alt="none"
           style={{ marginTop: "10px" }}
         />

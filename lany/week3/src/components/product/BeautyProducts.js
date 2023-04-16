@@ -18,7 +18,7 @@ export default function ProductDetail({ imgSrc, name, salePercent, salePrice, pr
         <div class="deliver">샛별배송</div>
         <div class="product">{name}</div>
         <div class="price">
-          <span style={{ color: "orangered", fontWeight: "700" }}>{salePercent}</span>
+          <span style={{ color: "orangered", fontWeight: "700" }}>{salePercent} </span>
           {salePrice}
         </div>
         <span class="regularPrice">{price}</span>

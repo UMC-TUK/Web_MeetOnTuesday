@@ -1,8 +1,20 @@
 import React from "react";
 import CategoryList from "./CategoryList";
+import { useNavigate } from "react-router-dom";
 
-export default function CategoryBar() {
-  const categories = [
+export default function CategoryBar({ isMarket }) {
+  const navigate = useNavigate();
+  const marketCtg = [
+    ["https://collection-image.kurly.com/site-category-groups/1/4IYbd0CEWkokpqiN00CAL9cDC2Q7nT101TDEn0tF.png", "채소"],
+    ["https://collection-image.kurly.com/site-category-groups/2/DNXCcUaXoXakDOdHiGhIMCNUeUjJioG9EyeQ7RRX.png", "과일·견과·쌀"],
+    ["https://collection-image.kurly.com/site-category-groups/3/fivaoZPBTeqaDswJUgr3k0xMV0von36Qb9qnn7ZZ.png", "수산·해산·건어물"],
+    ["https://collection-image.kurly.com/site-category-groups/4/jj6zZg2sY94aytlc2k1udIAmWWvmUignR9VYaMcm.png", "정육·계란"],
+    ["https://collection-image.kurly.com/site-category-groups/5/CkyoRnUe2q9ngIOLW3bJPRYBw9xq9BHZ3fNQIq1c.png", "국·반찬·메인요리"],
+    ["https://collection-image.kurly.com/site-category-groups/6/kwat5Szmq0ONTpMd4hlbcGmCOBd3FsMPyTzWxKBb.png", "샐러드·간편식"],
+    ["https://collection-image.kurly.com/site-category-groups/7/CL0LpJynh8Nh2Vqmnm62RVTPePWVU84VkWwQPjdO.png", "면·양념·오일"],
+    ["https://collection-image.kurly.com/site-category-groups/9/5qKRHLtIeBWLxUPa1g3koUhqsAkc39YjtMnyIXCJ.png", "간식·과자·떡"],
+  ];
+  const beautyCtg = [
     ["https://collection-image.kurly.com/site-category-groups/37/XEDwObHGlgg2ptryOfwf6D5BkPN6hnzBWjNixWWT.png", "스킨케어"],
     ["https://collection-image.kurly.com/site-category-groups/38/jFrQQQLnAfeerlLoxuotfd7iVwMplTbBkxvaT016.png", "메이크업"],
     ["https://collection-image.kurly.com/site-category-groups/39/1oZUXregXMMHPCuaTwBnSMKBIeCm8sar5jD059hg.png", "클렌징"],
@@ -12,7 +24,13 @@ export default function CategoryBar() {
     ["https://collection-image.kurly.com/site-category-groups/43/Af3IfTlHNuzM7xxWx9LbFSdZOl5scCtYctGnGCGU.png", "구강·위생용품"],
     ["https://collection-image.kurly.com/site-category-groups/44/WF66c2ZhodM2dOgSY2JKqdcLDYpiso2OKEd8FzUT.png", "향수·디퓨저"],
     ["https://collection-image.kurly.com/site-category-groups/45/v8a0soawBJqLLsyvkR2rr3JT1MdRgCQDwpz62NdO.png", "유아동"],
+    ["https://collection-image.kurly.com/site-category-groups/8/bKllScRqF9gQ5q58LcmBfOOhgBrCOdVypPiRvQkL.png", "생수·음료·우유·커피"],
   ];
+  const bars = ["신상품", "베스트", "알뜰쇼핑", "특가/혜택"];
+  const onClick = () => {
+    navigate(isMarket ? "/" : "/beauty");
+  };
+  const categories = isMarket ? marketCtg : beautyCtg;
   return (
     <>
       {/*  카테고리 줄  */}
@@ -51,19 +69,13 @@ export default function CategoryBar() {
             })}
           </div>
         </div>
-        <a href="/" class="list">
-          신상품
-        </a>
-        <a href="/" class="list">
-          베스트
-        </a>
-        <a href="/" class="list">
-          알뜰쇼핑
-        </a>
-        <a href="/" class="list">
-          특가/혜택
-        </a>
-
+        {bars.map((bar, index) => {
+          return (
+            <div onClick={onClick} class="list" key={`bar${index}`}>
+              {bar}
+            </div>
+          );
+        })}
         <div
           style={{
             fontWeight: "500",
