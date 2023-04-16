@@ -58,8 +58,265 @@ function MainPage() {
             </svg>
           </button>
         </div>
-        <div className="section2">2</div>
-        <div className="section3">3</div>
+        <div className="section2">
+          <button>디자인</button>
+          <button>커리어고민</button>
+          <button>개발</button>
+          <button>취업/이직</button>
+          <button>IT/기술</button>
+          <button>UX/UI</button>
+          <button>마케팅</button>
+          <button>노무</button>
+          <button>리더십</button>
+        </div>
+        <div className="section3">
+          <div className="contentCard">
+            <div>
+              <div className="cardImg">
+                <img
+                  src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fevents%2F2666%2Fe9c422a6.jpg&w=1200&q=90"
+                  alt="이미지"
+                />
+              </div>
+              <h3>인사담당자가 직접 말하는, 서류 통과가 잘 되는 이력서</h3>
+              <p>
+                주목! 아래 두 인사담당자의 조언을 참고해보자. 어쩌면 (우리의)
+                역사상 가장 완벽한 이력서 작성이 가능해질 것이다.
+              </p>
+              <div className="cardLogo">
+                <img
+                  src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fwanted-public.s3.ap-northeast-2.amazonaws.com%2Fwanted_opengraph.png&w=60&q=90"
+                  alt="logo"
+                />
+                <p>Wanted</p>
+              </div>
+            </div>
+            <div>
+              <div className="cardImg">
+                <img
+                  src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fevents%2F2666%2Fe9c422a6.jpg&w=1200&q=90"
+                  alt="이미지"
+                />
+              </div>
+              <h3>인사담당자가 직접 말하는, 서류 통과가 잘 되는 이력서</h3>
+              <p>
+                주목! 아래 두 인사담당자의 조언을 참고해보자. 어쩌면 (우리의)
+                역사상 가장 완벽한 이력서 작성이 가능해질 것이다.
+              </p>
+              <div className="cardLogo">
+                <img
+                  src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fwanted-public.s3.ap-northeast-2.amazonaws.com%2Fwanted_opengraph.png&w=60&q=90"
+                  alt="logo"
+                />
+                <p>Wanted</p>
+              </div>
+            </div>
+            <div>
+              <div className="cardImg">
+                <img
+                  src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fevents%2F2666%2Fe9c422a6.jpg&w=1200&q=90"
+                  alt="이미지"
+                />
+              </div>
+              <h3>인사담당자가 직접 말하는, 서류 통과가 잘 되는 이력서</h3>
+              <p>
+                주목! 아래 두 인사담당자의 조언을 참고해보자. 어쩌면 (우리의)
+                역사상 가장 완벽한 이력서 작성이 가능해질 것이다.
+              </p>
+              <div className="cardLogo">
+                <img
+                  src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fwanted-public.s3.ap-northeast-2.amazonaws.com%2Fwanted_opengraph.png&w=60&q=90"
+                  alt="logo"
+                />
+                <p>Wanted</p>
+              </div>
+            </div>
+            <div>
+              <div className="cardImg">
+                <img
+                  src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fevents%2F2666%2Fe9c422a6.jpg&w=1200&q=90"
+                  alt="이미지"
+                />
+              </div>
+              <h3>인사담당자가 직접 말하는, 서류 통과가 잘 되는 이력서</h3>
+              <p>
+                주목! 아래 두 인사담당자의 조언을 참고해보자. 어쩌면 (우리의)
+                역사상 가장 완벽한 이력서 작성이 가능해질 것이다.
+              </p>
+              <div className="cardLogo">
+                <img
+                  src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fwanted-public.s3.ap-northeast-2.amazonaws.com%2Fwanted_opengraph.png&w=60&q=90"
+                  alt="logo"
+                />
+                <p>Wanted</p>
+              </div>
+            </div>
+          </div>
+          <div className="contentCard">
+            <div>
+              <div className="cardImg">
+                <img
+                  src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fevents%2F2666%2Fe9c422a6.jpg&w=1200&q=90"
+                  alt="이미지"
+                />
+              </div>
+              <h3>인사담당자가 직접 말하는, 서류 통과가 잘 되는 이력서</h3>
+              <p>
+                주목! 아래 두 인사담당자의 조언을 참고해보자. 어쩌면 (우리의)
+                역사상 가장 완벽한 이력서 작성이 가능해질 것이다.
+              </p>
+              <div className="cardLogo">
+                <img
+                  src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fwanted-public.s3.ap-northeast-2.amazonaws.com%2Fwanted_opengraph.png&w=60&q=90"
+                  alt="logo"
+                />
+                <p>Wanted</p>
+              </div>
+            </div>
+            <div>
+              <div className="cardImg">
+                <img
+                  src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fevents%2F2666%2Fe9c422a6.jpg&w=1200&q=90"
+                  alt="이미지"
+                />
+              </div>
+              <h3>인사담당자가 직접 말하는, 서류 통과가 잘 되는 이력서</h3>
+              <p>
+                주목! 아래 두 인사담당자의 조언을 참고해보자. 어쩌면 (우리의)
+                역사상 가장 완벽한 이력서 작성이 가능해질 것이다.
+              </p>
+              <div className="cardLogo">
+                <img
+                  src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fwanted-public.s3.ap-northeast-2.amazonaws.com%2Fwanted_opengraph.png&w=60&q=90"
+                  alt="logo"
+                />
+                <p>Wanted</p>
+              </div>
+            </div>
+            <div>
+              <div className="cardImg">
+                <img
+                  src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fevents%2F2666%2Fe9c422a6.jpg&w=1200&q=90"
+                  alt="이미지"
+                />
+              </div>
+              <h3>인사담당자가 직접 말하는, 서류 통과가 잘 되는 이력서</h3>
+              <p>
+                주목! 아래 두 인사담당자의 조언을 참고해보자. 어쩌면 (우리의)
+                역사상 가장 완벽한 이력서 작성이 가능해질 것이다.
+              </p>
+              <div className="cardLogo">
+                <img
+                  src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fwanted-public.s3.ap-northeast-2.amazonaws.com%2Fwanted_opengraph.png&w=60&q=90"
+                  alt="logo"
+                />
+                <p>Wanted</p>
+              </div>
+            </div>
+            <div>
+              <div className="cardImg">
+                <img
+                  src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fevents%2F2666%2Fe9c422a6.jpg&w=1200&q=90"
+                  alt="이미지"
+                />
+              </div>
+              <h3>인사담당자가 직접 말하는, 서류 통과가 잘 되는 이력서</h3>
+              <p>
+                주목! 아래 두 인사담당자의 조언을 참고해보자. 어쩌면 (우리의)
+                역사상 가장 완벽한 이력서 작성이 가능해질 것이다.
+              </p>
+              <div className="cardLogo">
+                <img
+                  src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fwanted-public.s3.ap-northeast-2.amazonaws.com%2Fwanted_opengraph.png&w=60&q=90"
+                  alt="logo"
+                />
+                <p>Wanted</p>
+              </div>
+            </div>
+          </div>
+          <div className="contentCard">
+            <div>
+              <div className="cardImg">
+                <img
+                  src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fevents%2F2666%2Fe9c422a6.jpg&w=1200&q=90"
+                  alt="이미지"
+                />
+              </div>
+              <h3>인사담당자가 직접 말하는, 서류 통과가 잘 되는 이력서</h3>
+              <p>
+                주목! 아래 두 인사담당자의 조언을 참고해보자. 어쩌면 (우리의)
+                역사상 가장 완벽한 이력서 작성이 가능해질 것이다.
+              </p>
+              <div className="cardLogo">
+                <img
+                  src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fwanted-public.s3.ap-northeast-2.amazonaws.com%2Fwanted_opengraph.png&w=60&q=90"
+                  alt="logo"
+                />
+                <p>Wanted</p>
+              </div>
+            </div>
+            <div>
+              <div className="cardImg">
+                <img
+                  src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fevents%2F2666%2Fe9c422a6.jpg&w=1200&q=90"
+                  alt="이미지"
+                />
+              </div>
+              <h3>인사담당자가 직접 말하는, 서류 통과가 잘 되는 이력서</h3>
+              <p>
+                주목! 아래 두 인사담당자의 조언을 참고해보자. 어쩌면 (우리의)
+                역사상 가장 완벽한 이력서 작성이 가능해질 것이다.
+              </p>
+              <div className="cardLogo">
+                <img
+                  src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fwanted-public.s3.ap-northeast-2.amazonaws.com%2Fwanted_opengraph.png&w=60&q=90"
+                  alt="logo"
+                />
+                <p>Wanted</p>
+              </div>
+            </div>
+            <div>
+              <div className="cardImg">
+                <img
+                  src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fevents%2F2666%2Fe9c422a6.jpg&w=1200&q=90"
+                  alt="이미지"
+                />
+              </div>
+              <h3>인사담당자가 직접 말하는, 서류 통과가 잘 되는 이력서</h3>
+              <p>
+                주목! 아래 두 인사담당자의 조언을 참고해보자. 어쩌면 (우리의)
+                역사상 가장 완벽한 이력서 작성이 가능해질 것이다.
+              </p>
+              <div className="cardLogo">
+                <img
+                  src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fwanted-public.s3.ap-northeast-2.amazonaws.com%2Fwanted_opengraph.png&w=60&q=90"
+                  alt="logo"
+                />
+                <p>Wanted</p>
+              </div>
+            </div>
+            <div>
+              <div className="cardImg">
+                <img
+                  src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fevents%2F2666%2Fe9c422a6.jpg&w=1200&q=90"
+                  alt="이미지"
+                />
+              </div>
+              <h3>인사담당자가 직접 말하는, 서류 통과가 잘 되는 이력서</h3>
+              <p>
+                주목! 아래 두 인사담당자의 조언을 참고해보자. 어쩌면 (우리의)
+                역사상 가장 완벽한 이력서 작성이 가능해질 것이다.
+              </p>
+              <div className="cardLogo">
+                <img
+                  src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fwanted-public.s3.ap-northeast-2.amazonaws.com%2Fwanted_opengraph.png&w=60&q=90"
+                  alt="logo"
+                />
+                <p>Wanted</p>
+              </div>
+            </div>
+          </div>
+        </div>
         <div className="section4">
           <button>
             <span>더 많은 콘텐츠 보기</span>

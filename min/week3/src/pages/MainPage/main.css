@@ -4,10 +4,11 @@
     padding-bottom:16rem;
 }
 header{
-    height: 27rem;
+    height: 25rem;
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 /* section css 속성 */
 section{
@@ -39,11 +40,78 @@ section > div {
 }
 .section2{
     height: 5rem;
-    background-color:bisque;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.section2 > button {
+    border: 1px solid rgb(183, 182, 182);
+    background-color: transparent;
+    color: rgb(183, 182, 182);
+    padding: 10px;
+    padding-right: 15px;
+    padding-left: 15px;
+    border-radius: 5rem;
+    font-size: 1rem;
+    font-weight: 700;
+}
+.section2 > button:hover {
+    background-color: rgba(243, 241, 241, 0.875);
 }
 .section3{
-    height: 30rem;
-    background-color:cornflowerblue;
+    height:70rem;
+    flex-direction: column;
+}
+.section3 > div{
+    width: 100%;
+}
+.contentCard{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 33%;
+}
+.contentCard> div{
+    width: 25%;
+    height: 100%;
+    padding: 10px;
+}
+.cardImg{
+    width: 18rem;
+    height: 13rem;
+    margin-bottom: 20px;
+}
+.cardImg > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.contentCard > div >h3{
+    font-weight: 600;
+    font-size: 1.4rem;
+    color: #171717;
+    margin-bottom: 5px;
+}
+.contentCard > div >p{
+    font-size: 0.9rem;
+    color: #8a8a8a;
+    margin: 0;
+}
+.cardLogo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.cardLogo > img{
+    width: 2rem;
+}
+.cardLogo > p{
+    color: #8a8a8a;
+    font-weight: 400;
+    font-size: 0.8rem;
+    margin-left: 5px;
 }
 .section4{
     padding-top: 1.3rem;
@@ -206,8 +274,8 @@ section > hr {
 .section7{
     height: 20rem;
     flex-direction: column;
-    padding-top: 2rem;
-    padding-bottom: 4rem;
+    padding-top: 0.8rem;
+    padding-bottom: 3rem;
 }
 .section7 > h2 {
     font-size: 1.7rem;

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './../components.css';
+import './navbar.css';
 
 function Navbar() {
   const [menu, setMenu] = useState<boolean>(false);
