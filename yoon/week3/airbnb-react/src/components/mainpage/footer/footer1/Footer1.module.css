@@ -1,0 +1,40 @@
+.footer1 {
+  border-top: 1px solid #ccc;
+  display: flex;
+  flex-direction: row;
+  height: 20px;
+  padding: 13px 80px 14px 80px;
+  background-color: aquamarine;
+}
+
+.footer1_inc_name {
+  font-size: 14px !important;
+  line-height: 18px !important;
+}
+
+.footer1_ol {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer1_li {
+  font-size: 14px !important;
+  line-height: 18px !important;
+}
+
+.footer1_dot {
+  display: inline-block !important;
+  text-align: center !important;
+  width: 19px !important;
+  font-size: 14px !important;
+  line-height: 18px !important;
+}
+
+.footer1_a {
+  text-decoration: none;
+  color: black;
+}
+
+.footer1_a:hover {
+  text-decoration: underline;
+}

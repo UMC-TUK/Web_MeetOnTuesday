@@ -1,0 +1,17 @@
+.logo {
+  /* border: 1px solid pink; */
+  flex: 1 0 140px;
+  align-self: center;
+}
+
+.logo_wrap {
+  /* border: 1px solid pink; */
+  width: 102px;
+}
+
+.logo_component1 {
+  width: 102px;
+  height: 32px;
+  display: block;
+  color: #ff385f;
+}

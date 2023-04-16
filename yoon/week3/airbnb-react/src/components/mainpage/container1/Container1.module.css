@@ -1,0 +1,15 @@
+.container1 {
+  border: 1px solid #234F1E;
+  height: 78px;
+  width: 100%;
+  position: fixed;
+  z-index: 2;
+  top: 80px;
+  padding: 20px 80px 0 80px;
+}
+
+.container1_wrap {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}

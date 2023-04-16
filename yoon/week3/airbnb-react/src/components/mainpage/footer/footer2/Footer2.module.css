@@ -1,0 +1,12 @@
+.footer2 {
+  height: 33px;
+  padding: 0 80px 8px 80px;
+}
+
+.footer2_text {
+  border-top: 1px solid #ccc;
+  color: rgb(113, 113, 113);
+  padding-bottom: 8px;
+  font-size: 10px;
+  padding-top: 6px;
+}
