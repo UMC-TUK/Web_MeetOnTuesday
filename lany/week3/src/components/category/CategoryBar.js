@@ -27,20 +27,7 @@ export default function CategoryBar({ isMarket }) {
     ["https://collection-image.kurly.com/site-category-groups/8/bKllScRqF9gQ5q58LcmBfOOhgBrCOdVypPiRvQkL.png", "생수·음료·우유·커피"],
   ];
   const bars = ["신상품", "베스트", "알뜰쇼핑", "특가/혜택"];
-  const onClick = (e) => {
-    let pageName = e.target.innerText;
-    console.log(e.target.innerText);
-    if (pageName === "신상품") {
-      pageName = "newproducts";
-    } else if (pageName === "베스트") {
-      pageName = "best";
-    } else if (pageName === "알뜰쇼핑") {
-      pageName = "timesales";
-    } else {
-      pageName = "benefits";
-    }
-    navigate(isMarket ? `/${pageName}` : `/beauty/${pageName}`);
-  };
+
   const categories = isMarket ? marketCtg : beautyCtg;
   return (
     <>
@@ -86,7 +73,7 @@ export default function CategoryBar({ isMarket }) {
         </div>
         {bars.map((bar, index) => {
           return (
-            <div onClick={(e) => onClick(e)} className="list" key={`bar${index}`}>
+            <div className="list" key={`bar${index}`}>
               {bar}
             </div>
           );
