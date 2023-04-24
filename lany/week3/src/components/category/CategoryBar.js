@@ -28,18 +28,18 @@ export default function CategoryBar({ isMarket }) {
   ];
   const bars = ["신상품", "베스트", "알뜰쇼핑", "특가/혜택"];
   const onClick = (e) => {
-    let pageName = e.target.innerText;
-    console.log(e.target.innerText);
-    if (pageName === "신상품") {
-      pageName = "newproducts";
-    } else if (pageName === "베스트") {
-      pageName = "best";
-    } else if (pageName === "알뜰쇼핑") {
-      pageName = "timesales";
-    } else {
-      pageName = "benefits";
-    }
-    navigate(isMarket ? `/${pageName}` : `/beauty/${pageName}`);
+    // let pageName = e.target.innerText;
+    // console.log(e.target.innerText);
+    // if (pageName === "신상품") {
+    //   pageName = "newproducts";
+    // } else if (pageName === "베스트") {
+    //   pageName = "best";
+    // } else if (pageName === "알뜰쇼핑") {
+    //   pageName = "timesales";
+    // } else {
+    //   pageName = "benefits";
+    // }
+    // navigate(isMarket ? `/${pageName}` : `/beauty/${pageName}`);
   };
   const categories = isMarket ? marketCtg : beautyCtg;
   return (
