@@ -1,0 +1,68 @@
+/* Footer 관련 css 속성 */
+.footerContainer{
+    width: 100%;
+    position : absolute;
+    bottom : 0;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+    border-top: 1px solid #ececec;
+    padding: 18px 0 65px;
+}
+.footerList{
+    width: 73%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.footerListLogo{
+    width: 15%;
+    display: flex;
+}
+.footerListLogo > button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0px;
+    margin-right: 10px;
+}
+.footerList > ul{
+    width: 60%;
+    display: flex;
+    justify-content:flex-start;
+    padding-left: 2rem;
+    align-items: center;
+}
+.footerList > ul >li{
+    margin-right: 2rem;
+    list-style: none;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #3a3a3a;
+    cursor: pointer; 
+}
+.footerListSns{
+    padding: 0;
+    width: 25%;
+    display: flex;
+    justify-content: flex-end;
+}
+.footerListSns > img{
+    width: 1.4rem;
+    height: 1.3rem;;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+.footerContainer > hr {
+    width:73%;
+    margin-top:25px;
+    margin-bottom: 25px;
+    border: 1px solid #ececec;
+}
+.footerText{
+    width: 73%;
+    color: #767676;
+    font-size: 12px;
+    line-height: 1.6em;
+}
