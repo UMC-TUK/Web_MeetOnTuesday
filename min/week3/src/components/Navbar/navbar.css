@@ -51,9 +51,12 @@
    height: 100%;
    cursor: pointer;
 }
-.menuContainer > ul >li {
-    height: 100%;
- }
+.menuContainer > ul >li>a {
+    text-decoration: none;
+}
+.menuContainer > ul >li>a:link, a:visited,  a:hover, a:active{
+    color: black;
+}
 .etcContainer{
     height: 100%;
     width: 15%;

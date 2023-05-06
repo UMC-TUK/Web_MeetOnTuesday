@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './navbar.css';
+import { Link } from 'react-router-dom';
 
 function Navbar() {
   const [menu, setMenu] = useState<boolean>(false);
@@ -29,13 +30,27 @@ function Navbar() {
       </div>
       <div className="menuContainer">
         <ul>
-          <li>채용</li>
-          <li>이벤트</li>
-          <li>직군별 연봉</li>
-          <li>이력서</li>
-          <li>커뮤니티</li>
-          <li>프리랜서</li>
-          <li>AI 합격예측</li>
+          <li>
+            <Link to="/other/채용">채용</Link>
+          </li>
+          <li>
+            <Link to="/other/이벤트">이벤트</Link>
+          </li>
+          <li>
+            <Link to="/other/직군별 연봉">직군별 연봉</Link>
+          </li>
+          <li>
+            <Link to="/other/이력서">이력서</Link>
+          </li>
+          <li>
+            <Link to="/other/커뮤니티">커뮤니티</Link>
+          </li>
+          <li>
+            <Link to="/other/프리랜서">프리랜서</Link>
+          </li>
+          <li>
+            <Link to="/other/채용">AI 합격예측</Link>
+          </li>
         </ul>
       </div>
       <div className="etcContainer">
