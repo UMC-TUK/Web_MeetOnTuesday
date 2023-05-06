@@ -13,7 +13,6 @@
 .helpBox {
   border: 1px solid lightgrey;
   width: 95px;
-  margin-top: 10px;
   position: absolute;
   display: none;
   flex-direction: column;
@@ -120,7 +119,7 @@
   background-color: white;
   border: 1px solid rgb(205, 205, 205);
   z-index: 1;
-  top: 160px;
+  top: 150px;
   display: none;
 }
 
@@ -154,8 +153,6 @@
 /* 배너 */
 .banner {
   display: flex;
-  width: 1848px;
-  height: 370px;
 }
 
 .arrowL,
