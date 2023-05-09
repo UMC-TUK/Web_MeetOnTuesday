@@ -10,7 +10,6 @@ const MainPage = () => {
     <Container1 />
     <Container2 />
     <Footer />
-    
   </div>);
 };
 
