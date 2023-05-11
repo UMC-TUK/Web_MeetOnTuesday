@@ -1,0 +1,28 @@
+.list-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.list {
+  font-size: 2rem;
+  margin: 1rem;
+}
+.list-wrapper button {
+  background-color: transparent;
+  padding: 5px;
+  border-radius: 5px;
+  border: 2px solid red;
+  color: red;
+  font-weight: 600;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+.list-wrapper button:hover {
+  color: orange;
+  border: 2px solid orange;
+}
+.title_cancle {
+}
+.title_complete {
+  text-decoration: dashed;
+}
