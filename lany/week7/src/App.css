@@ -1,0 +1,169 @@
+/* 회원가입, 로그인, 고객센터 */
+.help:hover > .helpContainer > .helpBox {
+  display: flex;
+}
+
+/* 검색어 입력 줄 */
+.marketM {
+  padding: 15px;
+  color: rgb(95, 0, 128);
+  font-weight: 600;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.beautyM {
+  padding-left: 15px;
+  border-left: 1px solid rgb(217, 217, 217);
+  color: #b5b5b5;
+  display: flex;
+  flex-direction: row;
+  margin-right: 60px;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.marketB {
+  padding: 15px;
+  color: #b5b5b5;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.beautyB {
+  padding-left: 15px;
+  border-left: 1px solid rgb(217, 217, 217);
+  color: rgb(95, 0, 128);
+  display: flex;
+  flex-direction: row;
+  margin-right: 60px;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.beautyM:hover,
+.marketM:hover,
+.beautyB:hover,
+.marketB:hover {
+  color: rgb(95, 0, 128);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* 카테고리 줄 */
+.list {
+  font-weight: 500;
+  margin-right: 100px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+}
+
+.list:hover {
+  color: rgb(95, 0, 128);
+  text-decoration-line: underline;
+  cursor: pointer;
+}
+
+.ctg {
+  margin-left: 110px;
+  margin-right: 150px;
+  display: flex;
+  width: 100px;
+  align-items: center;
+}
+
+.ctgContainer {
+  overflow-y: scroll;
+  height: 300px;
+  width: 250px;
+  position: absolute;
+  background-color: white;
+  border: 1px solid rgb(205, 205, 205);
+  z-index: 1;
+  top: 150px;
+  display: none;
+}
+
+.ctg:hover > .ctgList {
+  color: rgb(95, 0, 128);
+  cursor: pointer;
+}
+
+.ctg:hover > .ctgContainer {
+  display: block;
+  cursor: pointer;
+}
+
+.ctgName {
+  display: flex;
+  align-items: center;
+  height: 25px;
+  padding: 10px 0px 10px 10px;
+}
+
+.ctgName:hover {
+  background-color: rgb(244, 244, 244);
+  color: rgb(95, 0, 128);
+}
+
+/* 배너 */
+.banner {
+  display: flex;
+}
+
+.arrowL,
+.arrowR {
+  position: relative;
+  height: 52px;
+  top: 154px;
+  opacity: 0;
+  transition: all 0.5s ease-out 0s;
+}
+
+.arrowL {
+  left: 460px;
+  transform: rotate(180deg);
+}
+
+.arrowR {
+  right: 460px;
+}
+
+.banner:hover {
+  cursor: pointer;
+}
+
+.banner:hover > .arrowL,
+.banner:hover > .arrowR {
+  opacity: 1;
+  transition: all 0.5s ease-in 0s;
+}
+
+/* 이 상품 어때요? */
+.imgBox {
+  width: 249px;
+  height: 320px;
+  transform: scale(1);
+  transition: 0.5s;
+}
+
+.imgBox:hover {
+  transform: scale(1.025);
+  transition: 0.5s;
+  overflow-block: 0;
+}
+
+.price {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.regularPrice {
+  text-decoration: line-through;
+  font-size: 14px;
+  color: rgb(176, 176, 176);
+}
