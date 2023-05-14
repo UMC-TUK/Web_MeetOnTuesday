@@ -1,0 +1,49 @@
+#wrap {
+  width: 700px;
+  margin: auto;
+}
+
+#form {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+span {
+  font-size: 14px;
+}
+
+input {
+  width: 280px;
+  height: 25px;
+  padding: 0 10px;
+  border: 1px solid lightgrey;
+  border-radius: 10px;
+}
+
+button {
+  width: 100px;
+  height: 25px;
+  border: 1px solid lightgrey;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#cards {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px 20px;
+}
+
+.card {
+  width: 330px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid lightgrey;
+  border-radius: 10px;
+}

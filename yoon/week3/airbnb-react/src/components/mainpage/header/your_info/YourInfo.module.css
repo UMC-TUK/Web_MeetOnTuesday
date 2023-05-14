@@ -1,92 +1,89 @@
-.yourinfo {
-  flex: 1 0 140px;
-  /* border: 1px solid pink; */
-  display: flex;
-  flex-direction: row;
-  padding: 0 160px 0 0;
-  justify-content: flex-end;
+.yourinfo{
+
 }
 
-.yourinfo_yourspace {
+.your_info_components{
+  height: 80px;
+  width: 351px;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  gap: 5px;
+}
+
+.your_info_component1{
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-right: 8px;
+  gap: 15px;
 }
 
-.yourinfo_yourspace_a {
-  padding: 12px;
+.your_space_airbnb{
+  /*font*/
   font-size: 14px;
   font-weight: 600;
-  text-decoration: none;
-  color: black;
-  border-radius: 20px;
-  
-}
-
-.yourinfo_yourspace_a:hover {
-  background-color: #f7f7f7;
-}
-
-.yourinfo_svg_wrap {
+  line-height: 18px;
+  text-decoration: none solid rgb(34, 34, 34);
+  white-space: nowrap;
+  word-spacing: 0px;
+  /*====*/
+  height: 42px;
+  width: 225px;
+  background-color: #ffffff;
+  cursor: pointer;
+  border-radius: 21px;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 40px;
-  height: 42px;
-  border-radius: 20px;
-
 }
 
-.yourinfo_yourspace_svg {
-  display: black;
-  height: 16px;
-  width: 16px;
-  fill: currentColor;
-  border-radius: 20px;
-}
-.yourinfo_svg_wrap:hover {
-  background-color: #f7f7f7;
+.your_space_airbnb:hover {
+  background-color: #f5f5f5;
 }
 
-.yourinfo_yourinfo {
-  width: 79px;
-  height: 42px;
-  align-self: center;
+/* .your_space_airbnb_text{
 
+} */
+
+.earth_icon{
+  border-radius: 50%;
+  width: 42px;
+  height: 40px;
+  cursor: pointer;
+  border: 0px;
+  background-color: #ffffff;
 }
 
-.yourinfo_yourinfo_button {
+.earth_icon:hover {
+  background-color: #f5f5f5;
+}
+
+.svgfile{
+  height: 16px; width: 16px; fill: currentcolor; position: relative; top: 2px;  
+}
+
+.your_info_component2{
+  display: flex;
+  align-items: center;
+}
+
+.nav_button{
   width: 77px;
   height: 42px;
-  display: flex;
-  flex-direction: row;
-  flex-direction: row;
-  align-items: center;
-  border-radius: 20px;
-  padding: 5px 5px 5px 12px;
-  border: 1px solid #ccc;
-  background-color: white;
+  border-radius: 21px;
+  cursor: pointer;
+  background-color: #ffffff;
+  border: 0.5px solid #ccc;
 }
 
-
-.yourinfo_yourinfo_button1 {
-  display: block; 
-  fill: none; 
-  height: 16px; 
-  width: 16px; 
-  stroke: currentcolor; 
-  stroke-width: 3; 
-  overflow: visible;
+.nav_button:hover {
+  box-shadow: 0px 1.5px 4px 0px #cecece;
 }
 
-.yourinfo_yourinfo_button2 {
-  width: 30px;
-  height: 30px;
-  display: block;
-  margin-left: 12px;
-  fill: currentcolor;
-  color: #717171;
+.nav_button_img_1{
+  fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 3; overflow: visible; position: relative; bottom: 4px;
 }
 
-
+.nav_button_img_2{
+  height: 29px; width: 29px; fill: currentcolor; position: relative; left: 6px; top:2px;
+}
