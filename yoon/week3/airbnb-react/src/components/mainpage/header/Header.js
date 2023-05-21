@@ -3,6 +3,22 @@ import classes from './Header.module.css';
 import Logo from './logo/Logo';
 import Search from './search/Search';
 import YourInfo from './your_info/YourInfo';
+import styled from 'styled-components';
+
+styled.header`
+  border-bottom: 1px solid #ccc;
+  height: 80px;
+  width: 941px;
+  max-width: 2520px;
+  background-color: #ffffff;
+  display: flex;
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  z-index: 1;
+`;
 
 const Header = () => {
   useEffect(() => {
