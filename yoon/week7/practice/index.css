@@ -1,0 +1,125 @@
+body {
+  padding: 0px 24px 0px 24px;
+  margin: 0px;
+}
+
+/* 헤더 */
+
+#header {
+  border: 1px solid black;
+  height: 80px;
+  padding: 0px 24x 0px 24px;
+  display: flex;
+}
+
+#header_wrap {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid yellow;
+  width: 100%;
+
+}
+
+#fabicon {
+  flex-grow: 1;
+  background-color: red;
+}
+
+#search {
+  width: 363.062px;
+  background-color: green;
+}
+
+#info {
+  flex-grow: 1;
+  background-color: blue;
+}
+
+/* 카테고리 */
+#category {
+  border: 1px solid black;
+  height: 78px;
+}
+
+
+@media (max-width: 1128px) {
+  #info {
+    flex-grow: 0;
+    width: 350.969px;
+  }
+}
+
+/* 메인 */
+#main {
+  border: 1px solid black;
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+}
+
+.content {
+  border: 1px solid blue;
+  margin: 10px;
+  padding-top: 131%; /* 정사각형 비율을 위한 padding 설정 */
+  position: relative;
+}
+
+.content > * {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+/* 반응형 웹 grid */
+
+/* 1440px 이상일 대 패딩 조정 */
+
+@media (min-width: 743px) {
+  body {
+    padding: 0px 40px 0px 40px;
+  }
+}
+
+@media (min-width: 1440px) {
+  body {
+    padding: 0px 80px 0px 80px;
+  }
+}
+
+/* 호텔 컴포넌트 */
+@media (max-width: 549px) {
+  #main {
+    grid-template-columns: repeat(1, 1fr);
+  }}
+
+@media (min-width: 550px) {
+  #main {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 950px) {
+  #main {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1128px) {
+  #main {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 1640px) {
+  #main {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media (min-width: 1880px) {
+  #main {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
