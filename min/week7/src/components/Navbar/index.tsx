@@ -149,6 +149,14 @@ const LogoContainer = styled.div`
     margin-left: 1rem;
     cursor: pointer;
   }
+  @media screen and (max-width: 1200px) {
+    width: 18%;
+    > img {
+      width: 1rem;
+    }
+  }
+  @media screen and (max-width: 800px) {
+  }
 `;
 const MenuContainer = styled.div`
   width: 45%;
@@ -181,10 +189,23 @@ const MenuContainer = styled.div`
   a:active {
     color: black;
   }
+  @media screen and (max-width: 1200px) {
+    width: 50%;
+    justify-content: flex-start;
+    > ul {
+      justify-content: flex-start;
+    }
+    > ul > li {
+      font-size: 0.8rem;
+      margin-right: 1.5rem;
+    }
+  }
+  @media screen and (max-width: 800px) {
+  }
 `;
 const EtcContainer = styled.div`
   height: 100%;
-  width: 15%;
+  width: 18%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -199,23 +220,30 @@ const EtcContainer = styled.div`
 const EtcBtn = styled.button`
   background-color: transparent;
   border: none;
-  margin-right: 0.7rem;
+  margin-right: 0.3rem;
 `;
 const ProfileBtn = styled.button`
   background-color: rgb(180, 0, 73);
   border: 1px solid #e1e2e3;
   border-radius: 50%;
-  font-size: 0.7rem;
-  width: 2.1rem;
-  height: 2.1rem;
+  font-size: 0.5rem;
+  width: 2.3rem;
+  height: 2.3rem;
   color: white;
 `;
 
 const ServiceBtn = styled.button`
   border: 1px solid #e1e2e3;
-  width: 5.5rem;
-  height: 2.5rem;
+  width: 6.5rem;
+  padding: 8px;
+  box-sizing: border-box;
   border-radius: 3rem;
   color: #666;
   background-color: transparent;
+  @media screen and (max-width: 1200px) {
+    width: 20rem;
+    font-size: 0.7rem;
+  }
+  @media screen and (max-width: 800px) {
+  }
 `;

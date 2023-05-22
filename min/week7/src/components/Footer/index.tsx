@@ -135,6 +135,16 @@ const FooterList = styled.div`
     color: #3a3a3a;
     cursor: pointer;
   }
+  @media screen and (max-width: 1200px) {
+    > ul > li {
+      font-size: 0.8rem;
+    }
+  }
+  @media screen and (max-width: 800px) {
+    > ul > li {
+      font-size: 0.5rem;
+    }
+  }
 `;
 const FooterListLogo = styled.div`
   width: 15%;
@@ -145,6 +155,9 @@ const FooterListLogo = styled.div`
     cursor: pointer;
     padding: 0px;
     margin-right: 10px;
+  }
+  @media screen and (max-width: 800px) {
+    width: 10%;
   }
 `;
 const FooterListSns = styled.div`
