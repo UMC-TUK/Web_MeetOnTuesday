@@ -1,6 +1,8 @@
 import './App.css';
 import React from 'react';
 import styled from 'styled-components';
+import { createStore } from 'redux';
+import { Provider, connect } from 'react-redux';
 
 const Button = styled.button`
   height: 10px;
@@ -21,6 +23,38 @@ const LoginButton = styled(Button)`
 const CustomerCenterButton = styled(Button)`
   font-size: 12px;
 `;
+
+const CHANGE_IMAGE = 'CHANGE_IMAGE';
+
+
+
+
+
+
+const changeImage = (index) => ({
+  type: CHANGE_IMAGE,
+  payload: index,
+});
+
+// 초기 상태 및 리듀서 함수
+const initialState = {
+  currentImageIndex: 0,
+};
+
+const reducer = (state = initialState, action) => {
+  switch (action.type) {
+    case CHANGE_IMAGE:
+      return {
+        ...state,
+        currentImageIndex: action.payload,
+      };
+    default:
+      return state;
+  }
+};
+
+// 스토어 생성
+const store = createStore(reducer);
 
 function App() {
   const imglist = ["https://product-image.kurly.com/cdn-cgi/image/quality=85/banner/main/pc/img/a47bfcb8-63df-4be5-a60f-9434baa6da18.jpg", "https://product-image.kurly.com/cdn-cgi/image/quality=85/banner/main/pc/img/20139e33-d871-4de9-a2e8-18a3024af36d.jpg", "https://product-image.kurly.com/cdn-cgi/image/quality=85/banner/main/pc/img/f736706e-a26a-4105-b1d2-f1843b9f2aef.jpg", "https://product-image.kurly.com/cdn-cgi/image/quality=85/banner/main/pc/img/f70905f4-7ef0-4b52-98a3-204c85a3d1ca.png", "https://product-image.kurly.com/cdn-cgi/image/quality=85/banner/main/pc/img/8c9af4e2-03ca-45ec-9a2a-926b969018ea.jpg", "https://product-image.kurly.com/cdn-cgi/image/quality=85/banner/main/pc/img/b0b32de3-1e08-454b-a7e6-fafd45dd86b5.jpg"]
@@ -107,16 +141,35 @@ function App() {
 
       <div class="how"><a class="css-1vohdi4 e10b7g5l1"><span class="css-r6zrzr ej3ms6t2">이 상품 어때요?</span></a></div>
 
-<div className="container">
+      <div className="products">
         <div className="raon"></div>
         <div className="shampoo"></div>
         <div className="mango"></div>
-        <div className="treatment">
-        </div>
+        <div className="treatment"></div>
       </div>
 
     </div>
   );
 }
+
+// mapStateToProps 함수
+const mapStateToProps = (state) => ({
+  currentImageIndex: state.currentImageIndex,
+});
+
+// mapDispatchToProps 객체
+const mapDispatchToProps = {
+  changeImage,
+};
+
+// 컨테이너 컴포넌트 생성
+const AppContainer = connect(mapStateToProps, mapDispatchToProps)(App);
+
+// 애플리케이션 래핑
+const AppWithRedux = () => (
+  <Provider store={store}>
+    <AppContainer />
+  </Provider>
+);
 
 export default App;
